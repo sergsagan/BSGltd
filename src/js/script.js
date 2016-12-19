@@ -78,8 +78,11 @@ $(function() {
 	});
 	
 	new WOW().init();
-    
-    
+	
+	$('#carousel').carousel({
+		interval: 5000
+	});
+	
     $('.fade').slick({
         speed: 500,
         fade: true,

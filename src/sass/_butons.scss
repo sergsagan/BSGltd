@@ -1,1 +1,100 @@
+.page-indicator{
+  .page{
+	opacity: 0.6;
+	color: #fff;
+	font-family: $ANR;
+	font-size: 125px;
+	font-weight: 400;
+	display: inline-block;
+	vertical-align: middle;
+  }
+  .vertical{
+	width: 5px;
+	height: 88px;
+	background-color: #fff;
+	opacity: 0.6;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;
+  }
+  sub{
+	opacity: 0.6;
+	color: #fff;
+	font-family: $ANR;
+	font-size: 30px;
+	font-weight: 400;
+	bottom: -1.25em;
+  }
+}
 
+.scroll-down-home{
+  width: 60px;
+  height: 60px;
+  border: 2px solid #fff;
+  background-color: #fdc895;
+  opacity: 0.7;
+  display: block;
+  position: absolute;
+  border-radius: 60px;
+  bottom: 7%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -7%);
+  transform: translate(-50%, -7%);
+
+  img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: block;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+  }
+}
+
+.scroll-up{
+  width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
+  background-color: #fdc895;
+  opacity: 0.7;
+  display: block;
+  position: absolute;
+  border-radius: 30px;
+  top: 12%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -12%);
+  transform: translate(-50%, -12%);
+
+  img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: block;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+  }
+}
+
+.scroll-down{
+  width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
+  background-color: #fdc895;
+  opacity: 0.7;
+  display: block;
+  position: absolute;
+  border-radius: 30px;
+  bottom: 5%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -5%);
+  transform: translate(-50%, -5%);
+
+  img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: block;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+  }
+}

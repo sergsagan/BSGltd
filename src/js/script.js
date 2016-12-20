@@ -6,12 +6,12 @@ $(function() {
 	
 	//anchor links
 	
-	$(".navbar-nav").on("click","a", function (event) {
+	/*$(".navbar-nav").on("click","a", function (event) {
 		event.preventDefault();
 		var id  = $(this).attr('href'),
 			top = $(id).offset().top;
 		$('body,html').animate({scrollTop: top}, 1500);
-	});
+	});*/
 	
 	$('nav li a').click(function () {
 		$('nav li').removeClass('active');
@@ -38,44 +38,74 @@ $(function() {
 		}
 	});
 	
+	$(window).scroll(function(){
+		if ( $(document).scrollTop() > 0 ) {
+			$('.header').fadeIn('fast').addClass("fixed");
+		} else {
+			$('.header').fadeOut('fast').removeClass("fixed");
+		}
+	});
+	
+	
 	//modal
 	
-	$('.order,.order-form').click( function(event){
+	$('.slider .page-indicator').click( function(event){
 		event.preventDefault();
 		$('#overlay').fadeIn(400, function(){
-			$('#modal-form').css('display', 'block');
-			$('#modal-form').animate({opacity: 1, top: '20%'}, 200);
+			$('#menu').css('display', 'block');
+			$('#menu').animate({opacity: 1, top: '50%', left:'0'}, 300);
 		});
 	});
 	
-	$('.form-close').click( function(){
-		$('#modal-form').animate({opacity: 0, top: '45%'}, 200,
+	$('#overlay, a').click( function(){
+		$('#menu').animate({opacity: 0, top: '50%', left: '-400px'}, 300,
 			function(){
 				$(this).css('display', 'none');
 				$('#overlay').fadeOut(400);
-				$('.form-of-training, .practices, .course').find(".name, .price, .price .rub").removeClass("active");
 			}
 		);
 	});
 	
+	$('.main-2 .page-indicator').click( function(event){
+		event.preventDefault();
+		$('#overlay').fadeIn(400, function(){
+			$('#menu').css('display', 'block');
+			$('#menu').animate({opacity: 1, top: '50%', left:'0'}, 300);
+		});
+	});
+	
+	$('#overlay, a').click( function(){
+		$('#menu').animate({opacity: 0, top: '50%', left: '-400px'}, 300,
+			function(){
+				$(this).css('display', 'none');
+				$('#overlay').fadeOut(400);
+			}
+		);
+	});
+	
+	$(".menu-list a").click(function() {
+		$("a").removeClass('active');
+		$(this).addClass('active').fadeIn(200);
+	});
+	
 	//change
-	$('.form-of-training .order-form').click(function() {
-		$('.form-of-training').find(".name, .price, .price .rub").removeClass("active");
-		$(this).parents('.form-of-training').find(".name").toggleClass("active").fadeIn(400);
-		$(this).parents('.form-of-training').find(".price, .price .rub").toggleClass("active").fadeIn(400);
-	});
-	
-	$('.practices .order-form').click(function() {
-		$('.practices').find(".name, .price, .price .rub").removeClass("active");
-		$(this).parents('.practices').find(".name").toggleClass("active").fadeIn(400);
-		$(this).parents('.practices').find(".price, .price .rub").toggleClass("active").fadeIn(400);
-	});
-	
-	$('.course .order-form').click(function() {
-		$('.course').find(".name, .price, .price .rub").removeClass("active");
-		$(this).parents('.course').find(".name").toggleClass("active").fadeIn(400);
-		$(this).parents('.course').find(".price, .price .rub").toggleClass("active").fadeIn(400);
-	});
+	// $('.form-of-training .order-form').click(function() {
+	// 	$('.form-of-training').find(".name, .price, .price .rub").removeClass("active");
+	// 	$(this).parents('.form-of-training').find(".name").toggleClass("active").fadeIn(400);
+	// 	$(this).parents('.form-of-training').find(".price, .price .rub").toggleClass("active").fadeIn(400);
+	// });
+	//
+	// $('.practices .order-form').click(function() {
+	// 	$('.practices').find(".name, .price, .price .rub").removeClass("active");
+	// 	$(this).parents('.practices').find(".name").toggleClass("active").fadeIn(400);
+	// 	$(this).parents('.practices').find(".price, .price .rub").toggleClass("active").fadeIn(400);
+	// });
+	//
+	// $('.course .order-form').click(function() {
+	// 	$('.course').find(".name, .price, .price .rub").removeClass("active");
+	// 	$(this).parents('.course').find(".name").toggleClass("active").fadeIn(400);
+	// 	$(this).parents('.course').find(".price, .price .rub").toggleClass("active").fadeIn(400);
+	// });
 	
 	new WOW().init();
 	
@@ -83,54 +113,37 @@ $(function() {
 		interval: 5000
 	});
 	
-    $('.fade').slick({
-        speed: 500,
-        fade: true,
-        cssEase: 'linear'
-    });
-
-    $('.responsive').slick({
-        dots: true,
-        arrows: false,
-        infinite: false,
-        speed: 300,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: false,
-                    arrows: false,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-        ]
-    });
-    
+	
+	$('.slider-for').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,
+		asNavFor: '.slider-nav'
+	});
+	$('.slider-nav').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		asNavFor: '.slider-for',
+		dots: true,
+		centerMode: true,
+		focusOnSelect: true
+	});
+	
+	
+	$(".step").on("click", ".top-line", function(){
+		$(".step .top-line").removeClass("active");
+		$(this).addClass("active");
+	});
+	
+	$("figure").on("click", "", function(){
+		$(".three figure").removeClass("select");
+		$(this).addClass("select");
+	});
 
     $("#phone").mask("+38 (999) 999-99-99");
 	
-	var today = new Date(),
+	/*var today = new Date(),
 		ts = new Date( today.getFullYear(), today.getMonth(), today.getDate() + 7),
 		newYear = true;
 	
@@ -152,7 +165,7 @@ $(function() {
 				message += "";
 			}
 		}
-	});
+	});*/
 
     
     //Аякс отправка форм

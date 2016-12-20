@@ -186,6 +186,10 @@ gulp.task('js:vendor', function() {
                   "main": "./dist/jquery.maskedinput.min.js"
               },
 	
+	          "jquery.sticky": {
+		          "main": "./jquery.sticky.js"
+	          },
+	
 	          "wow": {
 		          "main": "./dist/wow.min.js"
 	          }

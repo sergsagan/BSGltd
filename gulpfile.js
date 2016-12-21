@@ -133,6 +133,13 @@ gulp.task('styles:vendor', function() {
               
 	          "wow": {
 		          "main": "./css/libs/animate.css"
+	          },
+	
+	          "ionrangeslider": {
+		          "main": [
+			          './css/ion.rangeSlider.css',
+			          './css/ion.rangeSlider.skinHTML5.css'
+		          ]
 	          }
           }
   }))
@@ -192,6 +199,10 @@ gulp.task('js:vendor', function() {
 	
 	          "wow": {
 		          "main": "./dist/wow.min.js"
+	          },
+              
+	          "ionrangeslider": {
+		          "main": "./js/ion.rangeSlider.min.js"
 	          }
           }
   }))

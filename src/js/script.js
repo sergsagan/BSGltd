@@ -1,17 +1,65 @@
 $(function() {
-
-    $("head").append("<link rel='stylesheet' type='text/css' href='css/vendor.css' />");
-
+	
     $("head").append("<link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' />");
 	
-	//anchor links
+	$("body").css("overflow-y","hidden");
+    
+    //anchor links
 	
-	/*$(".navbar-nav").on("click","a", function (event) {
+	$(".slider").on("click","a.scroll-down-home", function (event) {
 		event.preventDefault();
 		var id  = $(this).attr('href'),
 			top = $(id).offset().top;
-		$('body,html').animate({scrollTop: top}, 1500);
-	});*/
+		$('body,html').animate({scrollTop: top}, 1200);
+	});
+	$(".main-2, .main-3").on("click","a.scroll-down", function (event) {
+		event.preventDefault();
+		var id  = $(this).attr('href'),
+			top = $(id).offset().top;
+		$('body,html').animate({scrollTop: top}, 1200);
+	});
+	
+	$(".main-2, .main-3, .main-4").on("click","a.scroll-up", function (event) {
+		event.preventDefault();
+		var id  = $(this).attr('href'),
+			top = $(id).offset().top;
+		$('body,html').animate({scrollTop: top}, 1200);
+	});
+	
+	$(".menu-list").on("click","a", function (event) {
+		event.preventDefault();
+		var id  = $(this).attr('href'),
+			top = $(id).offset().top;
+		$('body,html').animate({scrollTop: top}, 1200);
+	});
+	
+	//charts
+	
+	google.charts.load('current', {
+		'packages': ['corechart']
+	});
+	google.charts.setOnLoadCallback(drawChart);
+	
+	function drawChart() {
+		
+		var data = google.visualization.arrayToDataTable([
+			['Task', 'тарифы'],
+			['Тариф 1', 3.3],
+			['Тариф 2', 5.8],
+			['Тариф 3', 7.1],
+			['Тариф 4', 8.5]
+		]);
+		
+		var options = {
+			title: ''
+		};
+		
+		var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+		
+		chart.draw(data, options);
+	}
+	
+	//menu
 	
 	$('nav li a').click(function () {
 		$('nav li').removeClass('active');
@@ -51,34 +99,67 @@ $(function() {
 	
 	$('.slider .page-indicator').click( function(event){
 		event.preventDefault();
-		$('#overlay').fadeIn(400, function(){
-			$('#menu').css('display', 'block');
-			$('#menu').animate({opacity: 1, top: '50%', left:'0'}, 300);
+		$('.overlay').fadeIn(400, function(){
+			$('.menu').css('display', 'block');
+			$('.menu').animate({opacity: 1, top: '50%', left:'0'}, 300);
 		});
 	});
 	
-	$('#overlay, a').click( function(){
-		$('#menu').animate({opacity: 0, top: '50%', left: '-400px'}, 300,
+	$('.overlay, a').click( function(){
+		$('.menu').animate({opacity: 0, top: '50%', left: '-400px'}, 300,
 			function(){
 				$(this).css('display', 'none');
-				$('#overlay').fadeOut(400);
+				$('.overlay').fadeOut(400);
 			}
 		);
 	});
 	
 	$('.main-2 .page-indicator').click( function(event){
 		event.preventDefault();
-		$('#overlay').fadeIn(400, function(){
-			$('#menu').css('display', 'block');
-			$('#menu').animate({opacity: 1, top: '50%', left:'0'}, 300);
+		$('.overlay').fadeIn(400, function(){
+			$('.menu').css('display', 'block');
+			$('.menu').animate({opacity: 1, top: '50%', left:'0'}, 300);
 		});
 	});
 	
-	$('#overlay, a').click( function(){
-		$('#menu').animate({opacity: 0, top: '50%', left: '-400px'}, 300,
+	$('.main-3 .page-indicator').click( function(event){
+		event.preventDefault();
+		$('.overlay').fadeIn(400, function(){
+			$('.menu').css('display', 'block');
+			$('.menu').animate({opacity: 1, top: '50%', left:'0'}, 300);
+		});
+	});
+	
+	$('.main-4 .page-indicator').click( function(event){
+		event.preventDefault();
+		$('.overlay').fadeIn(400, function(){
+			$('.menu').css('display', 'block');
+			$('.menu').animate({opacity: 1, top: '50%', left:'0'}, 300);
+		});
+	});
+	
+	$('.overlay, a').click( function(){
+		$('.menu').animate({opacity: 0, top: '50%', left: '-400px'}, 300,
 			function(){
 				$(this).css('display', 'none');
-				$('#overlay').fadeOut(400);
+				$('.overlay').fadeOut(400);
+			}
+		);
+	});
+	
+	$('.calc').click( function(event){
+		event.preventDefault();
+		$('.overlay').fadeIn(400, function(){
+			$('#calculator').css('display', 'block');
+			$('#calculator').animate({opacity: 1, top: '30%'}, 300);
+		});
+	});
+	
+	$('.close').click( function(){
+		$('#calculator').animate({opacity: 0, top: '30%'}, 300,
+			function(){
+				$(this).css('display', 'none');
+				$('.overlay').fadeOut(400);
 			}
 		);
 	});
@@ -88,36 +169,36 @@ $(function() {
 		$(this).addClass('active').fadeIn(200);
 	});
 	
-	//change
-	// $('.form-of-training .order-form').click(function() {
-	// 	$('.form-of-training').find(".name, .price, .price .rub").removeClass("active");
-	// 	$(this).parents('.form-of-training').find(".name").toggleClass("active").fadeIn(400);
-	// 	$(this).parents('.form-of-training').find(".price, .price .rub").toggleClass("active").fadeIn(400);
-	// });
-	//
-	// $('.practices .order-form').click(function() {
-	// 	$('.practices').find(".name, .price, .price .rub").removeClass("active");
-	// 	$(this).parents('.practices').find(".name").toggleClass("active").fadeIn(400);
-	// 	$(this).parents('.practices').find(".price, .price .rub").toggleClass("active").fadeIn(400);
-	// });
-	//
-	// $('.course .order-form').click(function() {
-	// 	$('.course').find(".name, .price, .price .rub").removeClass("active");
-	// 	$(this).parents('.course').find(".name").toggleClass("active").fadeIn(400);
-	// 	$(this).parents('.course').find(".price, .price .rub").toggleClass("active").fadeIn(400);
-	// });
+	//ion slider range
+	
+	var $range1 = $(".js-range-slider");
+	
+	$range1.ionRangeSlider({
+		grid: false,
+		min: 10,
+		max: 100,
+		from: 0,
+		to: 100,
+		step: 1,
+		prettify_enabled: true,
+		prefix: "$"
+	});
+	
 	
 	new WOW().init();
+	
+	//slider Bootstrap
 	
 	$('#carousel').carousel({
 		interval: 5000
 	});
 	
+	//slick-slider
 	
 	$('.slider-for').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		arrows: false,
+		arrows: true,
 		fade: true,
 		asNavFor: '.slider-nav'
 	});
@@ -130,43 +211,25 @@ $(function() {
 		focusOnSelect: true
 	});
 	
+	//change selector
 	
 	$(".step").on("click", ".top-line", function(){
 		$(".step .top-line").removeClass("active");
-		$(this).addClass("active");
+		$(this).addClass("active").fadeIn(200);
 	});
 	
-	$("figure").on("click", "", function(){
-		$(".three figure").removeClass("select");
-		$(this).addClass("select");
+	$(".task").on("click", "", function(){
+		$(".step-for-three .task").removeClass("select");
+		$(this).addClass("select").fadeIn(200);
+	});
+	
+	$(".rate").on("click", "", function(){
+		$(".rate").removeClass("select");
+		$(this).addClass("select").fadeIn(200);
 	});
 
     $("#phone").mask("+38 (999) 999-99-99");
 	
-	/*var today = new Date(),
-		ts = new Date( today.getFullYear(), today.getMonth(), today.getDate() + 7),
-		newYear = true;
-	
-	$('#countdown').countdown({
-		timestamp	: ts,
-		callback	: function(days, hours, minutes, seconds){
-			
-			var message = "";
-			
-			message += days + " <i>дней</i> " + ( days==1 ? '':'' ) + "";
-			message += hours + "" + ( hours==1 ? '':':' ) + "";
-			message += minutes + "" + ( minutes==1 ? '':':' ) + "";
-			message += seconds + " " + ( seconds==1 ? '':' ' ) + " ";
-			
-			if(newYear){
-				message += "";
-			}
-			else {
-				message += "";
-			}
-		}
-	});*/
-
     
     //Аякс отправка форм
     //Документация: http://api.jquery.com/jquery.ajax/

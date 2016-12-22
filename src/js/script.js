@@ -86,13 +86,6 @@ $(function() {
 		}
 	});
 	
-	$(window).scroll(function(){
-		if ( $(document).scrollTop() > 0 ) {
-			$('.header').fadeIn('fast').addClass("fixed");
-		} else {
-			$('.header').fadeOut('fast').removeClass("fixed");
-		}
-	});
 	
 	
 	//modal
@@ -149,7 +142,7 @@ $(function() {
 	
 	$('.calc').click( function(event){
 		event.preventDefault();
-		$('.overlay').fadeIn(400, function(){
+		$('.overlay2').fadeIn(400, function(){
 			$('#calculator').css('display', 'block');
 			$('#calculator').animate({opacity: 1, top: '30%'}, 300);
 		});
@@ -159,7 +152,7 @@ $(function() {
 		$('#calculator').animate({opacity: 0, top: '30%'}, 300,
 			function(){
 				$(this).css('display', 'none');
-				$('.overlay').fadeOut(400);
+				$('.overlay2').fadeOut(400);
 			}
 		);
 	});
@@ -250,4 +243,17 @@ $(function() {
 		});
 		return false;
 	});
+});
+
+$(window).ready(function() {
+	$(window).scroll(function(){
+		if ( $(document).scrollTop() >= 1) {
+			$('.header').addClass("fixed");
+		} else {
+			$('.header').removeClass("fixed");
+		}
+	});
+	
+	$(window).scrollTop($(window).scrollTop() + 1);
+	$(window).scrollTop($(window).scrollTop() - 1);
 });

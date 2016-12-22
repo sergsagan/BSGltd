@@ -5,6 +5,7 @@
   height: auto;*/
   width: 100vw;
   height: 100vh;
+  min-width: 1000px;
   margin: 0 auto;
   position: relative;
 
@@ -89,8 +90,10 @@
   right: 0;
   width: 100%;
   max-width: 1920px;
+  min-width: 1000px;
   background-color: transparent;
   display: block!important;
+  z-index: 1045;
 
   .navbar {
 	position: relative;
@@ -228,6 +231,157 @@
 
 }
 
+.header-inner{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 1920px;
+  min-width: 1000px;
+  display: block!important;
+  z-index: 1045;
+  background-color: #ff9774;
+  opacity: 0.98;
+  filter: alpha(Opacity=98);
+  height: auto;
+
+  .navbar {
+	position: relative;
+	min-height: 50px;
+	margin-bottom: 0;
+	border: none;
+	border-radius: 0;
+	margin-right: 7%;
+	margin-left: 7%;
+  }
+
+  .navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+	border-bottom: none;
+	height: 78px;
+	position: relative;
+	display: block;
+  }
+
+  .navbar-brand {
+	float: left;
+	height: auto;
+	padding: 26px 15px;
+	color: transparent;
+	margin-right: 60px;
+  }
+
+  .navbar-nav {
+	padding-top: 0;
+  }
+
+  .navbar-right {
+	float: right !important;
+	margin-right: 0;
+  }
+
+  .navbar-default .navbar-nav > li > a {
+	color: white;
+	font-size: 18px;
+	font-weight: 400;
+	cursor: pointer;
+	font-family: $ANR;
+	line-height: 28px;
+
+  }
+
+  .nav {
+	li {
+	  a {
+		padding: 23px 0 0;
+		margin: 0 20px 0;
+		border-bottom: 2px solid transparent;
+		@include transition(all .6s);
+
+		&:hover{
+		  border-bottom: 2px solid white;
+		}
+	  }
+	}
+  }
+
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > li > a:focus {
+	color: white;
+  }
+
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+	color: white;
+	background-color: transparent;
+  }
+
+  .container-fluid > .navbar-header{
+	margin-right: 0;
+	margin-left: -15px;
+  }
+
+  .navbar-default .navbar-form {
+	border-color: transparent;
+	padding: 0;
+  }
+  .navbar-default .navbar-form.navbar-right {
+	position: absolute;
+	top: 12px;
+	right: 0;
+
+
+	.registr{
+	  color: #6e6e6e;
+	  font-family: $ANR;
+	  font-size: 17px;
+	  line-height: 26px;
+	  font-weight: 400;
+	  text-decoration: none;
+	  width: 150px;
+	  height: 32px;
+	  border-radius: 10px;
+	  background-color: #fff;
+	  text-align: center;
+	  display: inline-block;
+	  border: 2px solid transparent;
+	  @include transition(all 0.5s);
+
+	  &:hover{
+		color: #fff;
+		border: 2px solid white;
+		background-color: transparent;
+	  }
+	}
+
+	.login{
+	  color: #fff;
+	  font-family: $ANR;
+	  font-size: 17px;
+	  line-height: 26px;
+	  font-weight: 400;
+	  text-decoration: none;
+	  width: 80px;
+	  height: 32px;
+	  border-radius: 10px;
+	  border: 2px solid #fff;
+	  display: inline-block;
+	  text-align: center;
+	  @include transition(all 0.5s);
+
+	  &:hover{
+		color: #6e6e6e;
+		border: 2px solid transparent;
+		background-color: #fff;
+	  }
+	}
+  }
+
+}
+
 .header.fixed{
   background-color: #ff9774;
   opacity: 0.98;
@@ -239,6 +393,7 @@
   .navbar-default {
 	border-bottom: none;
   }
+
 }
 
 //left-menu (page indicator)
@@ -541,6 +696,7 @@
   height: auto;*/
   width: 100vw;
   height: 100vh;
+  min-width: 1000px;
   margin: 0 auto;
   position: relative;
   padding: 150px 0 50px;
@@ -794,6 +950,7 @@
 	max-width: 1920px;
 	height: auto;*/
   width: 100vw;
+  min-width: 1000px;
   height: 100vh;
   margin: 0 auto;
   position: relative;
@@ -1218,6 +1375,7 @@
 	height: auto;*/
   width: 100vw;
   height: 100vh;
+  min-width: 1000px;
   margin: 0 auto;
   position: relative;
   padding: 150px 0 40px;
@@ -1297,11 +1455,39 @@
 
 }
 
+//section first
+
+.first{
+  width: 100%;
+  max-width: 1920px;
+  height: auto;
+  min-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  padding: 220px 0 40px;
+  background-color: #fff;
+
+  .content{
+	@include clearfix;
+
+	.left-block, .right-block{
+	  float: left;
+	  width: 40%;
+	  margin: 0 auto;
+	}
+  }
+
+
+
+
+}
+
 //footer
 
 .footer{
   width: 100%;
   max-width: 1920px;
+  min-width: 1000px;
   height: 135px;
   margin: -135px auto;
   position: relative;

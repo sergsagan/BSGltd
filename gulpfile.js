@@ -134,13 +134,14 @@ gulp.task('styles:vendor', function() {
 	          "wow": {
 		          "main": "./css/libs/animate.css"
 	          },
-	
+	          
 	          "ionrangeslider": {
 		          "main": [
 			          './css/ion.rangeSlider.css',
 			          './css/ion.rangeSlider.skinHTML5.css'
 		          ]
 	          }
+	          
           }
   }))
   .pipe(cssFilter)
@@ -204,6 +205,7 @@ gulp.task('js:vendor', function() {
 	          "ionrangeslider": {
 		          "main": "./js/ion.rangeSlider.min.js"
 	          }
+	          
           }
   }))
       .pipe(jsFilter)

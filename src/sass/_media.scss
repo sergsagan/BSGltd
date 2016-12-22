@@ -1,9 +1,585 @@
-@media only screen and (min-width: 320px) and (max-width: 479px) {}
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {}
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+  .slider .img-responsive, .slider .thumbnail > img, .slider .thumbnail a > img, .slider .carousel-inner > .item > img, .slider .carousel-inner > .item > a > img {
+	height: 768px;
+	position: relative;
+  }
+  .header .navbar-default .navbar-nav > li > a {
+	font-size: 16px;
+	margin: 0 10px 0
+  }
+  .header .navbar-brand {
+	margin-right: 0;
+  }
+  .slider .carousel-caption .title {
+	font-size: 29px;
+	margin-bottom: 40px;
+  }
+  .slider .carousel-caption .description {
+	font-size: 16px;
+	line-height: 20px;
+  }
+  .main-2 {
+	padding: 200px 0 50px;
+  }
+  .main-2 .block-text .step-for-one .title {
+	font-size: 24px;
+	line-height: 30px;
+	margin-bottom: 20px;
+  }
+  .main-2 .block-text .step-for-one .description {
+	font-size: 16px;
+	margin-bottom: 50px;
+  }
+  .main-2 .block-step .slider-nav .step {
+	font-size: 16px;
+  }
+  .main-2 .scroll-down {
+	bottom: 3%;
+  }
+  .main-2 .scroll-up {
+	top: 13%;
+  }
+  .main-2 .block-text .step-for-two .title {
+	font-size: 22px;
+	margin-bottom: 14px;
+  }
+  .main-2 .block-text .step-for-two .description {
+	margin-bottom: 40px;
+	font-size: 16px;
+  }
+  .main-2 .block-text .step-for-two figure figcaption .heading {
+	font-size: 18px;
+	margin-bottom: 3px;
+  }
+  .main-2 .block-text .step-for-two figure figcaption span {
+	font-size: 14px;
+  }
+  .main-2 .block-text .step-for-three .task-mini figure figcaption .heading {
+	font-size: 14px;
+  }
+  .main-2 .block-text .step-for-three .task-mini figure figcaption span {
+	font-size: 12px;
+  }
+  .main-2 .block-text .step-for-three .task-mini figure figcaption {
+	max-width: 180px;
+  }
+  .main-2 .block-text .step-for-three .task-mini .select {
+	width: 180px;
+  }
+  .main-2 .block-text .step-for-three .task-mini figure {
+	margin: 5px auto 40px;
+  }
+  .main-2 .block-text .step-for-three .text {
+	font-size: 14px;
+	margin-bottom: 40px;
+  }
+  .main-3 {
+	padding: 200px 0 50px;
+  }
+  .main-3 .block-text .step-for-two .rate-selection .rate {
+	max-width: 240px;
+	padding: 10px 10px 10px;
+  }
+  .main-4 {
+	padding: 200px 0 40px;
+  }
+  .main-4 .scroll-up {
+	top: 20%;
+  }
+  form.feadback {
+	padding-left: 40px;
+  }
+  .feadback input {
+	width: 225px;
+  }
+}
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {}
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  .header .nav li a {
+	margin: 0 18px 0;
+  }
+  .main-2 {
+	padding: 190px 0 50px;
+  }
+  .main-2 .block-text .step-for-one .title {
+	font-size: 32px;
+	line-height: 35px;
+	margin-bottom: 20px;
+  }
+  .main-2 .block-text .step-for-one .description {
+	font-size: 16px;
+	margin-bottom: 50px;
+  }
+  .main-2 .block-step .slider-nav .step {
+	font-size: 16px;
+  }
+  .main-2 .scroll-down {
+	bottom: 3%;
+  }
+  .main-2 .scroll-up {
+	top: 13%;
+  }
+  .main-2 .block-text .step-for-two .title {
+	font-size: 22px;
+	margin-bottom: 20px;
+  }
+  .main-2 .block-text .step-for-two .description {
+	margin-bottom: 40px;
+	font-size: 16px;
+  }
+  .main-2 .block-text .step-for-two figure figcaption .heading {
+	font-size: 18px;
+	margin-bottom: 3px;
+  }
+  .main-2 .block-text .step-for-two figure figcaption span {
+	font-size: 14px;
+  }
+  .main-2 .block-text .step-for-three .task-mini figure figcaption .heading {
+	font-size: 14px;
+  }
+  .main-2 .block-text .step-for-three .task-mini figure figcaption span {
+	font-size: 12px;
+  }
+  .main-2 .block-text .step-for-three .task-mini figure figcaption {
+	max-width: 200px;
+  }
+  .main-2 .block-text .step-for-three .task-mini .select {
+	width: 200px;
+  }
+  .main-2 .block-text .step-for-three .task-mini figure {
+	margin: 5px auto 40px;
+  }
+  .main-2 .block-text .step-for-three .text {
+	font-size: 14px;
+	margin-bottom: 40px;
+  }
+  .main-3 {
+	padding: 210px 0 50px;
+  }
+  .main-3 .block-text .step-for-two .rate-selection .rate {
+	max-width: 260px;
+	margin: 8px 10px 8px;
+  }
+  .main-3 .block-text .step-for-two .rate-selection .select {
+	width: 260px;
+  }
+  .main-4 {
+	padding: 200px 0 40px;
+  }
+  .main-4 .scroll-up {
+	top: 20%;
+  }
+  .feadback input {
+	width: 284px;
+  }
+}
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+@media only screen and (min-width: 1370px) and (max-width: 1440px) {
+  .header .nav li a {
+	margin: 0 25px 0;
+  }
+  .slider .img-responsive, .slider .thumbnail > img, .slider .thumbnail a > img, .slider .carousel-inner > .item > img, .slider .carousel-inner > .item > a > img {
+	height: 900px;
+	position: relative;
+  }
+  .main-2 {
+	padding: 300px 0 50px;
+  }
+  .main-2 .block-text .step-for-one .title {
+	font-size: 35px;
+	line-height: 38px;
+	margin-bottom: 30px;
+  }
+  .main-2 .block-text .step-for-one .description {
+	font-size: 18px;
+	margin-bottom: 70px;
+  }
+  .main-2 .block-step .slider-nav .step {
+	font-size: 18px;
+  }
+  .main-2 .scroll-down {
+	bottom: 3%;
+  }
+  .main-2 .scroll-up {
+	top: 13%;
+  }
+  .main-2 .block-text .step-for-two .title {
+	font-size: 25px;
+	margin-bottom: 25px;
+  }
+  .main-2 .block-text .step-for-two .description {
+	margin-bottom: 50px;
+	font-size: 18px;
+  }
+  .main-2 .block-text .step-for-two figure figcaption .heading {
+	font-size: 20px;
+	margin-bottom: 3px;
+  }
+  .main-2 .block-text .step-for-two figure figcaption span {
+	font-size: 15px;
+  }
+  .main-2 .block-text .step-for-three .task-mini figure figcaption .heading {
+	font-size: 15px;
+  }
+  .main-2 .block-text .step-for-three .task-mini figure figcaption span {
+	font-size: 14px;
+  }
+  .main-2 .block-text .step-for-three .task-mini figure figcaption {
+	max-width: 220px;
+  }
+  .main-2 .block-text .step-for-three .task-mini .select {
+	width: 220px;
+  }
+  .main-2 .block-text .step-for-three .task-mini figure {
+	margin: 5px auto 50px;
+  }
+  .main-2 .block-text .step-for-three .text {
+	font-size: 16px;
+	margin-bottom: 60px;
+  }
+  .main-3 {
+	padding: 300px 0 50px;
+  }
+  .main-4 {
+	padding: 250px 0 40px;
+  }
+  .main-4 .scroll-up {
+	top: 12%;
+  }
+  .main-4 .title {
+	font-size: 28px;
+	line-height: 30px;
+	margin-bottom: 35px;
+  }
+  .main-4 .description {
+	font-size: 20px;
+	margin-bottom: 70px;
+  }
+}
 
-@media only screen and (min-width: 1200px) and (max-width: 1920px) {}
+@media only screen and (min-width: 1441px) and (max-width: 1680px){
+  .header .nav li a {
+	margin: 0 45px 0;
+  }
+  .slider .img-responsive, .slider .thumbnail > img, .slider .thumbnail a > img, .slider .carousel-inner > .item > img, .slider .carousel-inner > .item > a > img {
+	height: 1050px;
+	position: relative;
+  }
+  .main-2 {
+	padding: 350px 0 50px;
+  }
+  .main-2 .block-text .step-for-one .title {
+	font-size: 36px;
+	line-height: 40px;
+	margin-bottom: 35px;
+  }
+  .main-2 .block-text .step-for-one .description {
+	font-size: 20px;
+	margin-bottom: 100px;
+  }
+  .main-2 .block-step .slider-nav .step {
+	font-size: 20px;
+  }
+  .main-2 .scroll-down {
+	bottom: 3%;
+  }
+  .main-2 .scroll-up {
+	top: 13%;
+  }
+  .main-2 .block-text .step-for-two .title {
+	font-size: 28px;
+	margin-bottom: 25px;
+  }
+  .main-2 .block-text .step-for-two .description {
+	margin-bottom: 70px;
+	font-size: 20px;
+  }
+  .main-2 .block-text .step-for-two figure figcaption .heading {
+	font-size: 22px;
+	margin-bottom: 3px;
+  }
+  .main-2 .block-text .step-for-two figure figcaption span {
+	font-size: 18px;
+  }
+  .main-2 .block-text .step-for-three .task-mini figure figcaption .heading {
+	font-size: 18px;
+  }
+  .main-2 .block-text .step-for-three .task-mini figure figcaption span {
+	font-size: 16px;
+  }
+  .main-2 .block-text .step-for-three .task-mini figure figcaption {
+	max-width: 220px;
+  }
+  .main-2 .block-text .step-for-three .task-mini .select {
+	width: 220px;
+  }
+  .main-2 .block-text .step-for-three .task-mini figure {
+	margin: 5px auto 70px;
+  }
+  .main-2 .block-text .step-for-three .text {
+	font-size: 18px;
+	margin-bottom: 80px;
+  }
+  .main-3 {
+	padding: 350px 0 50px;
+  }
+  .main-3 .scroll-down {
+	bottom: 3%;
+  }
+  .main-3 .scroll-up {
+	top: 12%;
+  }
+  .main-3 .block-text .step-for-one .slide-information .heading {
+	font-size: 28px;
+  }
+  .main-3 .block-text .step-for-one .slide-information .description {
+	font-size: 20px;
+	margin-bottom: 20px;
+	line-height: 22px;
+  }
+  .main-3 .block-text .step-for-one .list li {
+	font-size: 20px;
+	line-height: 25px;
+	margin-bottom: 15px;
+  }
+  .main-3 .block-step .slider-nav .step {
+	font-size: 20px;
+  }
+  .main-3 .block-text .step-for-two .rate-selection .rate {
+	max-width: 278px;
+	margin: 5px 15px 5px;
+  }
+  .main-3 .block-text .step-for-two .rate-selection .select {
+	width: 278px;
+  }
+  .main-3 .block-text .step-for-two .rate-selection .rate .title {
+	font-size: 18px;
+  }
+  .main-3 .block-text .step-for-two .rate-selection .rate span {
+	font-size: 20px;
+  }
+  .main-3 .block-text .step-for-two .rate-selection .rate button {
+	font-size: 16px;
+  }
+  .main-3 .block-text .step-for-two .rate-selection .rate ul li {
+	font-size: 16px;
+  }
+  .main-3 .block-text .step-for-three .user-information .description {
+	font-size: 18px;
+  }
+  .main-3 .block-text .step-for-three .user-information .name {
+	font-size: 18px;
+  }
+  .main-3 .block-text .step-for-three .user-data {
+	padding-top: 70px;
+  }
+  .main-3 .block-text .step-for-three .user-data span {
+	font-size: 40px;
+	line-height: 40px;
+  }
+  .main-4 {
+	padding: 260px 0 40px;
+  }
+  .main-4 .scroll-up {
+	top: 12%;
+  }
+  .main-4 .title {
+	font-size: 28px;
+	line-height: 30px;
+	margin-bottom: 35px;
+  }
+  .main-4 .description {
+	font-size: 20px;
+	margin-bottom: 70px;
+  }
+  .feadback label {
+	font-size: 16px;
+  }
+  .feadback textarea {
+	height: 100px;
+	font-size: 16px;
+  }
+  .feadback input {
+	height: 45px;
+	font-size: 16px;
+  }
+  .main-4 .information p {
+	font-size: 16px;
+  }
+  .main-4 .information .heading {
+	font-size: 24px;
+  }
+  .footer {
+	height: 150px;
+	margin: -150px auto;
+	padding: 10px 0;
+  }
+  .footer .copyright span {
+	font-size: 18px;
+	margin-bottom: 5px;
+  }
+}
+
+@media only screen and (min-width: 1681px) and (max-width: 1920px) {
+  .header .nav li a {
+	margin: 0 60px 0;
+  }
+  .slider .img-responsive, .slider .thumbnail > img, .slider .thumbnail a > img, .slider .carousel-inner > .item > img, .slider .carousel-inner > .item > a > img {
+	height: 1080px;
+	position: relative;
+  }
+  .main-2 {
+	padding: 350px 0 50px;
+  }
+  .main-2 .block-text .step-for-one .title {
+	font-size: 36px;
+	line-height: 40px;
+	margin-bottom: 35px;
+  }
+  .main-2 .block-text .step-for-one .description {
+	font-size: 20px;
+	margin-bottom: 100px;
+  }
+  .main-2 .block-step .slider-nav .step {
+	font-size: 20px;
+  }
+  .main-2 .scroll-down {
+	bottom: 3%;
+  }
+  .main-2 .scroll-up {
+	top: 11%;
+  }
+  .main-2 .block-text .step-for-two .title {
+	font-size: 28px;
+	margin-bottom: 25px;
+  }
+  .main-2 .block-text .step-for-two .description {
+	margin-bottom: 70px;
+	font-size: 20px;
+  }
+  .main-2 .block-text .step-for-two figure figcaption .heading {
+	font-size: 22px;
+	margin-bottom: 3px;
+  }
+  .main-2 .block-text .step-for-two figure figcaption span {
+	font-size: 18px;
+  }
+  .main-2 .block-text .step-for-three .task-mini figure figcaption .heading {
+	font-size: 18px;
+  }
+  .main-2 .block-text .step-for-three .task-mini figure figcaption span {
+	font-size: 16px;
+  }
+  .main-2 .block-text .step-for-three .task-mini figure figcaption {
+	max-width: 220px;
+  }
+  .main-2 .block-text .step-for-three .task-mini .select {
+	width: 220px;
+  }
+  .main-2 .block-text .step-for-three .task-mini figure {
+	margin: 5px auto 70px;
+  }
+  .main-2 .block-text .step-for-three .text {
+	font-size: 18px;
+	margin-bottom: 80px;
+  }
+  .main-3 {
+	padding: 400px 0 50px;
+  }
+  .main-3 .scroll-down {
+	bottom: 3%;
+  }
+  .main-3 .scroll-up {
+	top: 12%;
+  }
+  .main-3 .block-text .step-for-one .slide-information .heading {
+	font-size: 28px;
+  }
+  .main-3 .block-text .step-for-one .slide-information .description {
+	font-size: 20px;
+	margin-bottom: 20px;
+	line-height: 22px;
+  }
+  .main-3 .block-text .step-for-one .list li {
+	font-size: 20px;
+	line-height: 25px;
+	margin-bottom: 15px;
+  }
+  .main-3 .block-step .slider-nav .step {
+	font-size: 20px;
+  }
+  .main-3 .block-text .step-for-two .rate-selection .rate {
+	max-width: 278px;
+	margin: 5px 15px 5px;
+  }
+  .main-3 .block-text .step-for-two .rate-selection .select {
+	width: 278px;
+  }
+  .main-3 .block-text .step-for-two .rate-selection .rate .title {
+	font-size: 18px;
+  }
+  .main-3 .block-text .step-for-two .rate-selection .rate span {
+	font-size: 20px;
+  }
+  .main-3 .block-text .step-for-two .rate-selection .rate button {
+	font-size: 16px;
+  }
+  .main-3 .block-text .step-for-two .rate-selection .rate ul li {
+	font-size: 16px;
+  }
+  .main-3 .block-text .step-for-three .user-information .description {
+	font-size: 18px;
+  }
+  .main-3 .block-text .step-for-three .user-information .name {
+	font-size: 18px;
+  }
+  .main-3 .block-text .step-for-three .user-data {
+	padding-top: 70px;
+  }
+  .main-3 .block-text .step-for-three .user-data span {
+	font-size: 40px;
+	line-height: 40px;
+  }
+  .main-4 {
+	padding: 260px 0 40px;
+  }
+  .main-4 .scroll-up {
+	top: 12%;
+  }
+  .main-4 .title {
+	font-size: 28px;
+	line-height: 30px;
+	margin-bottom: 35px;
+  }
+  .main-4 .description {
+	font-size: 20px;
+	margin-bottom: 70px;
+  }
+  .feadback label {
+	font-size: 16px;
+  }
+  .feadback textarea {
+	height: 100px;
+	font-size: 16px;
+  }
+  .feadback input {
+	height: 45px;
+	font-size: 16px;
+  }
+  .main-4 .information p {
+	font-size: 16px;
+  }
+  .main-4 .information .heading {
+	font-size: 24px;
+  }
+  .footer {
+	height: 150px;
+	margin: -150px auto;
+	padding: 10px 0;
+  }
+  .footer .copyright span {
+	font-size: 18px;
+	margin-bottom: 5px;
+  }
+}

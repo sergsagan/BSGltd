@@ -4,32 +4,35 @@
 	height: 768px;
 	position: relative;
   }
+  .slider .carousel-caption {
+	top: 11%;
+  }
   .header .navbar-default .navbar-nav > li > a {
-	font-size: 16px;
+	font-size: 15px;
 	margin: 0 10px 0
   }
   .header .navbar-brand {
 	margin-right: 0;
   }
   .slider .carousel-caption .title {
-	font-size: 29px;
-	margin-bottom: 40px;
+	font-size: 22px;
+	margin-bottom: 30px;
   }
   .slider .carousel-caption .description {
-	font-size: 16px;
+	font-size: 15px;
 	line-height: 20px;
   }
-  .main-2 {
-	padding: 200px 0 50px;
+  .main-2{
+	padding: 25vh 0 10vh;
   }
   .main-2 .block-text .step-for-one .title {
-	font-size: 24px;
+	font-size: 26px;
 	line-height: 30px;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
   }
   .main-2 .block-text .step-for-one .description {
-	font-size: 16px;
-	margin-bottom: 50px;
+	font-size: 15px;
+	width: 50vw;
   }
   .main-2 .block-step .slider-nav .step {
 	font-size: 16px;
@@ -41,19 +44,29 @@
 	top: 13%;
   }
   .main-2 .block-text .step-for-two .title {
-	font-size: 22px;
-	margin-bottom: 14px;
+	font-size: 20px;
+	margin-bottom: 10px;
   }
   .main-2 .block-text .step-for-two .description {
-	margin-bottom: 40px;
-	font-size: 16px;
+	margin-bottom: 30px;
+	font-size: 14px;
+  }
+  .main-2 .slick-prev {
+	left: 0;
+	z-index: 1000;
+  }
+  .main-2 .slick-next {
+	right: 0;
+  }
+  .main-2 .block-text .step-for-two figure {
+	margin: 0 -10px;
   }
   .main-2 .block-text .step-for-two figure figcaption .heading {
-	font-size: 18px;
+	font-size: 16px;
 	margin-bottom: 3px;
   }
   .main-2 .block-text .step-for-two figure figcaption span {
-	font-size: 14px;
+	font-size: 13px;
   }
   .main-2 .block-text .step-for-three .task-mini figure figcaption .heading {
 	font-size: 14px;
@@ -65,24 +78,51 @@
 	max-width: 180px;
   }
   .main-2 .block-text .step-for-three .task-mini .select {
-	width: 180px;
+	width: 160px;
   }
   .main-2 .block-text .step-for-three .task-mini figure {
 	margin: 5px auto 40px;
   }
+  .main-2 .block-text .step-for-three .title {
+	font-size: 18px;
+	line-height: 25px;
+  }
   .main-2 .block-text .step-for-three .text {
 	font-size: 14px;
-	margin-bottom: 40px;
+	width: 50vw;
+	margin: 0 auto 30px;
   }
-  .main-3 {
-	padding: 200px 0 50px;
+  .main-3 .block-text .step-for-one .slide-information .heading {
+	font-size: 18px;
   }
   .main-3 .block-text .step-for-two .rate-selection .rate {
-	max-width: 240px;
-	padding: 10px 10px 10px;
+	max-width: 234px;
+	padding: 10px 5px 10px;
   }
-  .main-4 {
-	padding: 200px 0 40px;
+  .main-3 .block-text .step-for-one .slide-information .description {
+	font-size: 14px;
+	line-height: 18px;
+  }
+  .main-3 .block-text .step-for-one .list li {
+	font-size: 14px;
+	line-height: 18px;
+  }
+  .main-3 .slick-prev {
+	left: 10px;
+	z-index: 1000;
+  }
+  .main-3 .slick-next {
+	right: 0;
+  }
+  .main-3 .block-text .step-for-one .slide-information {
+	padding-left: 30px;
+  }
+  .main-3 .block-text .step-for-three .user-data .block-1 span,
+  .main-3 .block-text .step-for-three .user-data .block-2 span{
+	font-size: 24px;
+	line-height: 30px;
+	margin-right: 40px;
+	margin-bottom: 25px;
   }
   .main-4 .scroll-up {
 	top: 20%;
@@ -99,17 +139,28 @@
   .header .nav li a {
 	margin: 0 18px 0;
   }
-  .main-2 {
-	padding: 190px 0 50px;
+  .header .navbar-default .navbar-nav > li > a {
+	font-size: 16px;
+  }
+  .slider .img-responsive, .slider .thumbnail > img, .slider .thumbnail a > img, .slider .carousel-inner > .item > img, .slider .carousel-inner > .item > a > img {
+	height: 800px;
+	position: relative;
+  }
+  .slider .carousel-caption .title {
+	font-size: 25px;
+  }
+  .slider .carousel-caption .description {
+	font-size: 16px;
+	padding: 0;
   }
   .main-2 .block-text .step-for-one .title {
-	font-size: 32px;
-	line-height: 35px;
-	margin-bottom: 20px;
+	font-size: 30px;
+	line-height: 34px;
+	margin-bottom: 15px;
   }
   .main-2 .block-text .step-for-one .description {
 	font-size: 16px;
-	margin-bottom: 50px;
+	width: 41vw;
   }
   .main-2 .block-step .slider-nav .step {
 	font-size: 16px;
@@ -150,12 +201,32 @@
   .main-2 .block-text .step-for-three .task-mini figure {
 	margin: 5px auto 40px;
   }
+  .main-2 .block-text .step-for-three .task-mini {
+	margin-bottom: 0;
+  }
+  .main-2 .block-text .step-for-three .title {
+	font-size: 22px;
+	line-height: 30px;
+	margin-bottom: 5px;
+  }
   .main-2 .block-text .step-for-three .text {
 	font-size: 14px;
-	margin-bottom: 40px;
+	width: 45vw;
+	margin: 0 auto 20px;
   }
-  .main-3 {
-	padding: 210px 0 50px;
+  .main-3 .block-text .step-for-one .slide-information .heading {
+	font-size: 20px;
+  }
+  .main-3 .slick-prev {
+	left: 0;
+	z-index: 1000;
+  }
+  .main-3 .slick-next {
+	right: 0;
+  }
+  .main-3 .block-text .step-for-one .slide-information {
+	margin-bottom: 0;
+	margin-top: 20px;
   }
   .main-3 .block-text .step-for-two .rate-selection .rate {
 	max-width: 257px;
@@ -164,11 +235,15 @@
   .main-3 .block-text .step-for-two .rate-selection .select {
 	width: 257px;
   }
-  .main-4 {
-	padding: 200px 0 40px;
-  }
   .main-4 .scroll-up {
 	top: 20%;
+  }
+  .main-4 .title {
+	font-size: 20px;
+  }
+  .main-4 .description {
+	font-size: 14px;
+	padding: 0 111px;
   }
   .feadback input {
 	width: 284px;
@@ -179,21 +254,31 @@
   .header .nav li a {
 	margin: 0 25px 0;
   }
+  .header .navbar-default .navbar-nav > li > a {
+	font-size: 17px;
+  }
   .slider .img-responsive, .slider .thumbnail > img, .slider .thumbnail a > img, .slider .carousel-inner > .item > img, .slider .carousel-inner > .item > a > img {
 	height: 900px;
 	position: relative;
   }
-  .main-2 {
-	padding: 300px 0 50px;
+  .slider .carousel-caption {
+	top: 5%;
   }
+  .slider .carousel-caption .title {
+	font-size: 30px;
+  }
+  .slider .carousel-caption .description {
+	font-size: 18px;
+	padding: 0 40px;
+  }
+
   .main-2 .block-text .step-for-one .title {
-	font-size: 35px;
-	line-height: 38px;
-	margin-bottom: 30px;
+	font-size: 33px;
+	line-height: 35px;
+	margin-bottom: 25px;
   }
   .main-2 .block-text .step-for-one .description {
 	font-size: 18px;
-	margin-bottom: 70px;
   }
   .main-2 .block-step .slider-nav .step {
 	font-size: 18px;
@@ -206,14 +291,14 @@
   }
   .main-2 .block-text .step-for-two .title {
 	font-size: 25px;
-	margin-bottom: 25px;
+	margin-bottom: 15px;
   }
   .main-2 .block-text .step-for-two .description {
 	margin-bottom: 50px;
 	font-size: 18px;
   }
   .main-2 .block-text .step-for-two figure figcaption .heading {
-	font-size: 20px;
+	font-size: 19px;
 	margin-bottom: 3px;
   }
   .main-2 .block-text .step-for-two figure figcaption span {
@@ -234,27 +319,25 @@
   .main-2 .block-text .step-for-three .task-mini figure {
 	margin: 5px auto 50px;
   }
+  .main-2 .block-text .step-for-three .title {
+	font-size: 23px;
+	line-height: 30px;
+	margin-bottom: 10px;
+  }
   .main-2 .block-text .step-for-three .text {
-	font-size: 16px;
-	margin-bottom: 60px;
-  }
-  .main-3 {
-	padding: 300px 0 50px;
-  }
-  .main-4 {
-	padding: 250px 0 40px;
+	font-size: 15px;
+	margin-bottom: 50px;
   }
   .main-4 .scroll-up {
 	top: 12%;
   }
   .main-4 .title {
-	font-size: 28px;
-	line-height: 30px;
-	margin-bottom: 35px;
+	font-size: 25px;
+	line-height: 25px;
+	margin-bottom: 20px;
   }
   .main-4 .description {
-	font-size: 20px;
-	margin-bottom: 70px;
+	font-size: 18px;
   }
 }
 
@@ -266,20 +349,26 @@
 	height: 1050px;
 	position: relative;
   }
-  .main-2 {
-	padding: 200px 0 100px;
+  .slider .carousel-caption {
+	top: 12%;
+  }
+  .slider .carousel-caption .title {
+	font-size: 34px;
+  }
+  .slider .carousel-caption .description {
+	font-size: 19px;
+	padding: 0 40px;
   }
   .main-2 .block-text .step-for-one .title {
-	font-size: 36px;
-	line-height: 40px;
-	margin-bottom: 35px;
+	font-size: 34px;
+	line-height: 38px;
+	margin-bottom: 30px;
   }
   .main-2 .block-text .step-for-one .description {
-	font-size: 20px;
-	margin-bottom: 25px;
+	font-size: 19px;
   }
   .main-2 .block-step .slider-nav .step {
-	font-size: 20px;
+	font-size: 19px;
   }
   .main-2 .scroll-down {
 	bottom: 3%;
@@ -288,19 +377,19 @@
 	top: 13%;
   }
   .main-2 .block-text .step-for-two .title {
-	font-size: 28px;
-	margin-bottom: 25px;
+	font-size: 24px;
+	margin-bottom: 10px;
   }
   .main-2 .block-text .step-for-two .description {
 	margin-bottom: 70px;
-	font-size: 20px;
+	font-size: 18px;
   }
   .main-2 .block-text .step-for-two figure figcaption .heading {
-	font-size: 22px;
+	font-size: 21px;
 	margin-bottom: 3px;
   }
   .main-2 .block-text .step-for-two figure figcaption span {
-	font-size: 18px;
+	font-size: 17px;
   }
   .main-2 .block-text .step-for-three .task-mini figure figcaption .heading {
 	font-size: 18px;
@@ -318,11 +407,8 @@
 	margin: 5px auto 70px;
   }
   .main-2 .block-text .step-for-three .text {
-	font-size: 18px;
-	margin-bottom: 80px;
-  }
-  .main-3 {
-	padding: 350px 0 50px;
+	font-size: 17px;
+	margin-bottom: 70px;
   }
   .main-3 .scroll-down {
 	bottom: 3%;
@@ -331,27 +417,27 @@
 	top: 12%;
   }
   .main-3 .block-text .step-for-one .slide-information .heading {
-	font-size: 28px;
+	font-size: 26px;
   }
   .main-3 .block-text .step-for-one .slide-information .description {
-	font-size: 20px;
+	font-size: 18px;
 	margin-bottom: 20px;
 	line-height: 22px;
   }
   .main-3 .block-text .step-for-one .list li {
-	font-size: 20px;
-	line-height: 25px;
+	font-size: 18px;
+	line-height: 22px;
 	margin-bottom: 15px;
   }
   .main-3 .block-step .slider-nav .step {
 	font-size: 20px;
   }
   .main-3 .block-text .step-for-two .rate-selection .rate {
-	max-width: 279px;
+	max-width: 270px;
 	margin: 6px 15px 6px;
   }
   .main-3 .block-text .step-for-two .rate-selection .select {
-	width: 279px;
+	width: 270px;
   }
   .main-3 .block-text .step-for-two .rate-selection .rate .title {
 	font-size: 18px;
@@ -378,29 +464,35 @@
 	font-size: 40px;
 	line-height: 40px;
   }
+  .main-3 .block-text .step-for-three .user-data .block-1 span {
+	margin-right: 0;
+  }
+  .main-3 .block-text .step-for-three .user-data .block-2 span {
+	margin-right: 0;
+  }
   .main-4 {
-	padding: 260px 0 40px;
+	padding: 15vh 0 5vh;
   }
   .main-4 .scroll-up {
 	top: 12%;
   }
   .main-4 .title {
-	font-size: 28px;
-	line-height: 30px;
+	font-size: 26px;
+	line-height: 28px;
 	margin-bottom: 35px;
   }
   .main-4 .description {
-	font-size: 20px;
-	margin-bottom: 70px;
+	font-size: 18px;
+	margin-bottom: 60px;
   }
-  .feadback label {
+  .main-4 .feadback label {
 	font-size: 16px;
   }
-  .feadback textarea {
+  .main-4 .feadback textarea {
 	height: 100px;
 	font-size: 16px;
   }
-  .feadback input {
+  .main-4 .feadback input {
 	height: 45px;
 	font-size: 16px;
   }
@@ -423,14 +515,11 @@
 
 @media only screen and (min-width: 1681px) and (max-width: 1920px) {
   .header .nav li a {
-	margin: 0 60px 0;
+	margin: 0 55px 0;
   }
   .slider .img-responsive, .slider .thumbnail > img, .slider .thumbnail a > img, .slider .carousel-inner > .item > img, .slider .carousel-inner > .item > a > img {
 	height: 1080px;
 	position: relative;
-  }
-  .main-2 {
-	padding: 350px 0 50px;
   }
   .main-2 .block-text .step-for-one .title {
 	font-size: 36px;
@@ -439,7 +528,6 @@
   }
   .main-2 .block-text .step-for-one .description {
 	font-size: 20px;
-	margin-bottom: 100px;
   }
   .main-2 .block-step .slider-nav .step {
 	font-size: 20px;
@@ -452,7 +540,7 @@
   }
   .main-2 .block-text .step-for-two .title {
 	font-size: 28px;
-	margin-bottom: 25px;
+	margin-bottom: 15px;
   }
   .main-2 .block-text .step-for-two .description {
 	margin-bottom: 70px;
@@ -483,9 +571,6 @@
   .main-2 .block-text .step-for-three .text {
 	font-size: 18px;
 	margin-bottom: 80px;
-  }
-  .main-3 {
-	padding: 400px 0 50px;
   }
   .main-3 .scroll-down {
 	bottom: 3%;
@@ -537,12 +622,19 @@
   .main-3 .block-text .step-for-three .user-data {
 	padding-top: 70px;
   }
-  .main-3 .block-text .step-for-three .user-data span {
+  .main-3 .block-text .step-for-three .user-data .block-1 span {
 	font-size: 40px;
 	line-height: 40px;
   }
-  .main-4 {
-	padding: 260px 0 40px;
+  .main-3 .block-text .step-for-three .user-data .block-1 span i{
+	font-size: 20px;
+  }
+  .main-3 .block-text .step-for-three .user-data .block-2 span {
+	font-size: 40px;
+	line-height: 40px;
+  }
+  .main-3 .block-text .step-for-three .user-data .block-2 span i{
+	font-size: 20px;
   }
   .main-4 .scroll-up {
 	top: 12%;

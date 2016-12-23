@@ -1,8 +1,6 @@
 //slider
 
 .slider{
-/*  width: 100%;
-  height: auto;*/
   width: 100vw;
   height: 100vh;
   min-width: 1000px;
@@ -26,24 +24,26 @@
 	position: absolute;
 	top: 15%;
 	left: 45%;
-	-webkit-transform: translate(-40%, 15%);
-	transform: translate(-40%, 15%);
+	-webkit-transform: translate(-40%, 25%);
+	transform: translate(-40%, 25%);
 	padding-bottom: 0;
 	right: auto;
 
 	.title{
 	  color: #fff;
 	  font-family: $ANB;
-	  font-size: 36px;
+	  font-size: 28px;
 	  font-weight: 700;
-	  margin-bottom: 50px;
+	  margin-bottom: 30px;
 	}
 	.description{
 	  color: #fff;
-	  font-family: $ANB;
-	  font-size: 20px;
-	  line-height: 28px;
-	  font-weight: 700;
+	  font-family: $ANR;
+	  font-size: 16px;
+	  line-height: 20px;
+	  font-weight: 400;
+	  padding: 0 21px;
+	  text-align: center;
 	}
   }
 
@@ -79,6 +79,7 @@
 	top: 40%;
 	left: 0;
   }
+
 }
 
 //header
@@ -133,7 +134,7 @@
 
   .navbar-default .navbar-nav > li > a {
 	color: white;
-	font-size: 18px;
+	font-size: 17px;
 	font-weight: 400;
 	cursor: pointer;
 	font-family: $ANR;
@@ -241,7 +242,6 @@
   min-width: 1000px;
   display: block!important;
   z-index: 1045;
-  background-color: #ff9774;
   opacity: 0.98;
   filter: alpha(Opacity=98);
   height: auto;
@@ -383,7 +383,6 @@
 }
 
 .header.fixed{
-  background-color: #ff9774;
   opacity: 0.98;
   filter: alpha(Opacity=98);
   z-index: 1099;
@@ -428,15 +427,28 @@
 	vertical-align: middle;
 	@include transition(all 0.5s);
 
-	&:hover{
-	  color: #e9a46c;
+	span{
+	  color: #6e6e6e;
+	  font-family: $ANR;
+	  font-size: 20px;
+	  font-weight: 400;
+	  display: block;
+	  margin-top: -25px;
 	}
   }
+  .menu-list li:hover a,
+  .menu-list li:hover span{
+	color: #e9a46c;
+  }
+
   ul > li > a.active{
 	color: #e9a46c;
 	font-family: $ANR;
 	font-size: 100px;
 	font-weight: 400;
+	span{
+	  color: #e9a46c;
+	}
   }
 
   ul{
@@ -584,7 +596,6 @@
 	width: 150px;
 	height: 32px;
 	border-radius: 6px;
-	background-image: linear-gradient(to right, #ee9377 0%, #e8a66b 100%);
 	color: #fff;
 	font-family: $ANB;
 	font-size: 16px;
@@ -679,7 +690,6 @@
   width: 2px;
   height: 36px;
   border: 2px solid #fff;
-  background-color: #ecb484;
   opacity: 0.6;
   position: absolute;
   bottom: 1%;
@@ -691,15 +701,12 @@
 //main-2
 
 .main-2{
-  /*width: 100%;
-  max-width: 1920px;
-  height: auto;*/
   width: 100vw;
   height: 100vh;
   min-width: 1000px;
   margin: 0 auto;
   position: relative;
-  padding: 150px 0 50px;
+  padding: 19vh 0 10vh;
   background-color: #fff;
 
   .page-indicator{
@@ -710,7 +717,6 @@
 
 	.page{
 	  opacity: 1;
-	  color: #ee9476;
 	  font-family: $ANR;
 	  font-size: 125px;
 	  font-weight: 400;
@@ -720,7 +726,6 @@
 	.vertical{
 	  width: 5px;
 	  height: 88px;
-	  background-color: #ee9476;
 	  opacity: 1;
 	  display: inline-block;
 	  vertical-align: middle;
@@ -728,7 +733,6 @@
 	}
 	sub{
 	  opacity: 1;
-	  color: #ee9476;
 	  font-family: $ANR;
 	  font-size: 30px;
 	  font-weight: 400;
@@ -771,27 +775,36 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
   }
+
+  .slick-prev.slick-disabled:before,
+  .slick-next.slick-disabled:before {
+	opacity: 0;
+  }
+
   .block-text{
 	margin-bottom: 30px;
 
 	.step-for-one{
-	  margin-top: 50px;
+	  margin-top: 15vh;
+
 	  .title{
 		color: #616161;
 		font-family:$ANB;
-		font-size: 25px;
-		line-height: 30px;
+		font-size: 24px;
+		line-height: 25px;
 		font-weight: 700;
 		text-align: center;
-		margin-bottom: 15px;
+		margin-bottom: 10px;
 	  }
 	  .description{
 		color: #808080;
-		font-family: $ANB;
+		font-family: $ANR;
 		font-size: 15px;
-		font-weight: 700;
+		line-height: 18px;
+		font-weight: 400;
 		text-align: center;
-		margin-bottom: 50px;
+		margin: 0 auto 30px;
+		width: 39vw;
 	  }
 	}
 
@@ -799,19 +812,21 @@
 	  width: 100%;
 
 	  .title{
-		font-size: 25px;
+		font-size: 22px;
 		margin-bottom: 5px;
 		font-weight: 700;
+		margin-top: 11vh;
 	  }
 
 	  .description{
-		margin-bottom: 25px;
+		margin-bottom: 40px;
 		font-size: 15px;
-		font-weight: 700;
+		font-weight: 400;
+		font-family: $ANR;
 	  }
 
 	  figure{
-		margin: 0 auto;
+		margin: 0 20px;
 		display: inline-block;
 
 		img{
@@ -821,6 +836,7 @@
 		figcaption{
 		  max-width: 240px;
 		  width: 100%;
+
 		  .heading{
 			color: #616161;
 			font-family: $ANB;
@@ -830,9 +846,9 @@
 		  }
 		  span{
 			color: #808080;
-			font-family: $ANB;
+			font-family: $ANR;
 			font-size: 14px;
-			font-weight: 700;
+			font-weight: 400;
 			display: block;
 		  }
 		}
@@ -841,9 +857,11 @@
 
 	.step-for-three{
 	  .task-mini{
-		margin-bottom: 15px;
+		margin-top: 20px;
+		margin-bottom: 0;
+
 		figure{
-		  margin: 5px auto 40px;
+		  margin: 5px auto 30px;
 		  display: inline-block;
 		  opacity: 0.5;
 
@@ -865,9 +883,10 @@
 			}
 			span{
 			  color: #808080;
-			  font-family: $ANB;
+			  font-family: $ANR;
 			  font-size: 12px;
-			  font-weight: 700;
+			  line-height: 15px;
+			  font-weight: 400;
 			  display: block;
 			}
 		  }
@@ -891,11 +910,12 @@
 	  }
 	  .text{
 		color: #808080;
-		font-family: $ANB;
+		font-family: $ANR;
 		font-size: 14px;
-		font-weight: 700;
+		font-weight: 400;
 		text-align: center;
-		margin-bottom: 30px;
+		width: 42vw;
+		margin: 0 auto 30px;
 	  }
 
 	}
@@ -927,7 +947,6 @@
 		  width: 200px;
 		  height: 8px;
 		  border-radius: 4px;
-		  background-image: linear-gradient(to right, #ffa083 0%, #f4b073 100%);
 		  display: block;
 		}
 
@@ -946,15 +965,12 @@
 //main-3
 
 .main-3 {
-  /*  width: 100%;
-	max-width: 1920px;
-	height: auto;*/
   width: 100vw;
   min-width: 1000px;
   height: 100vh;
   margin: 0 auto;
   position: relative;
-  padding: 150px 0 50px;
+  padding: 20vh 0 10vh;
   background-color: #fff;
 
   .page-indicator {
@@ -965,7 +981,6 @@
 
 	.page {
 	  opacity: 1;
-	  color: #ee9476;
 	  font-family: $ANR;
 	  font-size: 125px;
 	  font-weight: 400;
@@ -975,7 +990,6 @@
 	.vertical {
 	  width: 5px;
 	  height: 88px;
-	  background-color: #ee9476;
 	  opacity: 1;
 	  display: inline-block;
 	  vertical-align: middle;
@@ -983,7 +997,6 @@
 	}
 	sub {
 	  opacity: 1;
-	  color: #ee9476;
 	  font-family: $ANR;
 	  font-size: 30px;
 	  font-weight: 400;
@@ -1003,7 +1016,7 @@
 	content: '';
 	display: block;
 	position: absolute;
-	left: 60px;
+	left: 0;
 	background: url("../img/left-arrow.png") 0 0 no-repeat;
 	width: 12px;
 	height: 22px;
@@ -1026,12 +1039,22 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
   }
+  .slick-prev.slick-disabled:before,
+  .slick-next.slick-disabled:before {
+	opacity: 0;
+  }
+  .slick-prev.slick-arrow {
+	left: -25px;
+	z-index: 100;
+  }
+
   .block-text {
 	margin-bottom: 100px;
 
 	.step-for-one {
 
 	  .slide-information {
+		margin-top: 50px;
 		margin-bottom: 40px;
 
 		.heading {
@@ -1044,9 +1067,9 @@
 		}
 		.description {
 		  color: #808080;
-		  font-family: $ANB;
+		  font-family: $ANR;
 		  font-size: 15px;
-		  font-weight: 700;
+		  font-weight: 400;
 		  text-align: left;
 		  margin-bottom: 10px;
 		  line-height: 20px;
@@ -1055,9 +1078,9 @@
 	  .list {
 
 		li {
-		  font-family: $ANB;
+		  font-family: $ANR;
 		  font-size: 15px;
-		  font-weight: 700;
+		  font-weight: 400;
 		  color: #808080;
 		  text-align: left;
 		  list-style: none;
@@ -1088,7 +1111,7 @@
 
 	  #piechart {
 		background-color: transparent;
-		width: 450px;
+		width: 400px;
 		height: 300px;
 	  }
 
@@ -1098,6 +1121,7 @@
 	  width: 100%;
 
 	  .rate-selection {
+		margin-top: 40px;
 
 		.rate {
 		  display: inline-block;
@@ -1111,7 +1135,6 @@
 		  text-align: center;
 
 		  .title {
-			color: #ec8d70;
 			font-family: $ANB;
 			font-size: 15px;
 			font-weight: 700;
@@ -1145,9 +1168,9 @@
 		  span {
 			display: block;
 			color: #616161;
-			font-family: $ANB;
+			font-family: $ANR;
 			font-size: 15px;
-			font-weight: 700;
+			font-weight: 400;
 			margin-bottom: 15px;
 		  }
 		  button {
@@ -1156,7 +1179,6 @@
 			border-radius: 12px;
 			border: 1px solid #e6e6e6;
 			background-color: #fff;
-			color: #ec8d70;
 			font-family: $ANB;
 			font-size: 14px;
 			font-weight: 700;
@@ -1188,9 +1210,9 @@
 			margin-bottom: 25px;
 			li {
 			  color: #808080;
-			  font-family: $ANB;
+			  font-family: $ANR;
 			  font-size: 14px;
-			  font-weight: 700;
+			  font-weight: 400;
 			  list-style: none;
 			  position: relative;
 			  padding-left: 25px;
@@ -1214,7 +1236,6 @@
 			height: 26px;
 			line-height: 26px;
 			border-radius: 6px;
-			background-image: linear-gradient(to right, #ee9377 0%, #e8a66b 100%);
 			color: #fff;
 			font-family: $ANB;
 			font-size: 13px;
@@ -1231,7 +1252,6 @@
 			height: 26px;
 			line-height: 26px;
 			border-radius: 6px;
-			background-image: linear-gradient(to right, #ee9377 0%, #e8a66b 100%);
 			color: #fff;
 			font-family: $ANB;
 			font-size: 13px;
@@ -1288,38 +1308,68 @@
 		}
 		.description {
 		  color: #808080;
-		  font-family: $ANB;
+		  font-family: $ANR;
 		  font-size: 14px;
-		  font-weight: 700;
+		  font-weight: 400;
 		  margin-bottom: 25px;
 		}
 		.name {
 		  color: #ec8d70;
-		  font-family: $ANB;
+		  font-family: $ANR;
 		  font-size: 14px;
-		  font-weight: 700;
+		  font-weight: 400;
 		}
 	  }
 
 	  .user-data {
 		padding-top: 50px;
-		span {
-		  color: #616161;
-		  font-family: $ANB;
-		  font-size: 30px;
-		  font-weight: 700;
+
+		.block-1 {
 		  display: inline-block;
 		  text-align: center;
-		  line-height: 35px;
-		  margin-right: 50px;
-		  margin-bottom: 40px;
 
-		  i {
-			color: #808080;
+		  span {
+			color: #616161;
 			font-family: $ANB;
-			font-size: 15px;
+			font-size: 30px;
 			font-weight: 700;
-			font-style: normal;
+			display: block;
+			text-align: center;
+			line-height: 35px;
+			margin-bottom: 40px;
+
+			i {
+			  color: #808080;
+			  font-family: $ANR;
+			  font-size: 15px;
+			  font-weight: 400;
+			  font-style: normal;
+			}
+
+		  }
+		}
+		.block-2 {
+		  display: inline-block;
+		  text-align: center;
+
+		  span {
+			color: #616161;
+			font-family: $ANB;
+			font-size: 30px;
+			font-weight: 700;
+			display: block;
+			text-align: center;
+			line-height: 35px;
+			margin-bottom: 40px;
+
+			i {
+			  color: #808080;
+			  font-family: $ANR;
+			  font-size: 15px;
+			  font-weight: 400;
+			  font-style: normal;
+			}
+
 		  }
 		}
 	  }
@@ -1333,6 +1383,7 @@
 	margin: 0 auto;
 
 	.slider-nav {
+
 	  .step {
 		display: block;
 		color: #616161;
@@ -1349,6 +1400,12 @@
 		  @include transition(all 0.5s);
 		}
 		.active {
+		  width: 200px;
+		  height: 8px;
+		  border-radius: 4px;
+		  display: block;
+		}
+		.orange{
 		  width: 200px;
 		  height: 8px;
 		  border-radius: 4px;
@@ -1370,15 +1427,12 @@
 //main-4
 
 .main-4 {
-  /*  width: 100%;
-	max-width: 1920px;
-	height: auto;*/
   width: 100vw;
   height: 100vh;
   min-width: 1000px;
   margin: 0 auto;
   position: relative;
-  padding: 150px 0 40px;
+  padding: 19vh 0 5vh;
   background-color: #fff;
 
   .page-indicator {
@@ -1389,7 +1443,6 @@
 
 	.page {
 	  opacity: 1;
-	  color: #ee9476;
 	  font-family: $ANR;
 	  font-size: 125px;
 	  font-weight: 400;
@@ -1399,7 +1452,6 @@
 	.vertical {
 	  width: 5px;
 	  height: 88px;
-	  background-color: #ee9476;
 	  opacity: 1;
 	  display: inline-block;
 	  vertical-align: middle;
@@ -1407,7 +1459,6 @@
 	}
 	sub {
 	  opacity: 1;
-	  color: #ee9476;
 	  font-family: $ANR;
 	  font-size: 30px;
 	  font-weight: 400;
@@ -1426,11 +1477,12 @@
   }
   .description {
 	color: #808080;
-	font-family: $ANB;
+	font-family: $ANR;
 	font-size: 15px;
-	font-weight: 700;
+	font-weight: 400;
 	text-align: center;
 	margin-bottom: 50px;
+	padding: 0 80px;
   }
   .information{
 	max-width: 265px;
@@ -1447,9 +1499,19 @@
 
 	p{
 	  color: #808080;
-	  font-family: $ANB;
+	  font-family: $ANR;
 	  font-size: 12px;
+	  font-weight: 400;
+	}
+  }
+
+  .feadback{
+	.title{
+	  color: #616161;
+	  font-family: $ANB;
+	  font-size: 18px;
 	  font-weight: 700;
+	  text-align: left;
 	}
   }
 
@@ -1467,15 +1529,7 @@
   padding: 220px 0 40px;
   background-color: #fff;
 
-  .content{
-	@include clearfix;
 
-	.left-block, .right-block{
-	  float: left;
-	  width: 40%;
-	  margin: 0 auto;
-	}
-  }
 
 
 
@@ -1491,7 +1545,6 @@
   height: 135px;
   margin: -135px auto;
   position: relative;
-  background-color: #fea768;
   padding: 10px 0 5px;
 
   .social-group-footer{
@@ -1540,9 +1593,9 @@
 	span{
 	  display: block;
 	  color: #fff;
-	  font-family: $ANB;
+	  font-family: $ANR;
 	  font-size: 14px;
-	  font-weight: 700;
+	  font-weight: 400;
 	  line-height: 18px;
 	  margin-bottom: 0;
 	}

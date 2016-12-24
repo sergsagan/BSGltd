@@ -1,57 +1,49 @@
-
-//AlergiaNormal-Regular font
+//AlergiaNormal-Bolditalic font
 
 @font-face {
-  font-family: 'AlergiaNormal-Regular';
-  src: url('../fonts/AlergiaNormal-Regular/AlergiaNormal-Regular.eot');
-  src: url('../fonts/AlergiaNormal-Regular/AlergiaNormal-Regular.woff2') format('woff2'),
-  url('../fonts/AlergiaNormal-Regular/AlergiaNormal-Regular.woff') format('woff'),
-  url('../fonts/AlergiaNormal-Regular/AlergiaNormal-Regular.ttf') format('truetype'),
-  url('../fonts/AlergiaNormal-Regular/AlergiaNormal-Regular.svg#AlergiaNormal-Regular') format('svg'),
-  url('../fonts/AlergiaNormal-Regular/AlergiaNormal-Regular.eot?#iefix') format('embedded-opentype');
+  font-family: 'alergia_normalbold_italic';
+  src: url('../fonts/AlergiaNormal-Bolditalic/borutta_group_-_alergia_normal_bold_italic-webfont.eot');
+  src: url('../fonts/AlergiaNormal-Bolditalic/borutta_group_-_alergia_normal_bold_italic-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/AlergiaNormal-Bolditalic/borutta_group_-_alergia_normal_bold_italic-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+
 }
 
 //AlergiaNormal-Bold font
 
 @font-face {
-  font-family: 'AlergiaNormal-Bold';
-  src: url('../fonts/AlergiaNormal-Bold/AlergiaNormal-Bold.eot');
-  src: url('../fonts/AlergiaNormal-Bold/AlergiaNormal-Bold.woff2') format('woff2'),
-  url('../fonts/AlergiaNormal-Bold/AlergiaNormal-Bold.woff') format('woff'),
-  url('../fonts/AlergiaNormal-Bold/AlergiaNormal-Bold.ttf') format('truetype'),
-  url('../fonts/AlergiaNormal-Bold/AlergiaNormal-Bold.svg#AlergiaNormal-Bold') format('svg'),
-  url('../fonts/AlergiaNormal-Bold/AlergiaNormal-Bold.eot?#iefix') format('embedded-opentype');
+  font-family: 'alergia_normalbold';
+  src: url('../fonts/AlergiaNormal-Bold/borutta_group_-_alergia_normal_bold-webfont.eot');
+  src: url('../fonts/AlergiaNormal-Bold/borutta_group_-_alergia_normal_bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/AlergiaNormal-Bold/borutta_group_-_alergia_normal_bold-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+
 }
 
 
 //AlergiaNormal-Italic font
 
 @font-face {
-  font-family: 'AlergiaNormal-Italic';
-  src: url('../fonts/AlergiaNormal-Italic/AlergiaNormal-Italic.eot');
-  src: url('../fonts/AlergiaNormal-Italic/AlergiaNormal-Italic.woff2') format('woff2'),
-  url('../fonts/AlergiaNormal-Italic/AlergiaNormal-Italic.woff') format('woff'),
-  url('../fonts/AlergiaNormal-Italic/AlergiaNormal-Italic.ttf') format('truetype'),
-  url('../fonts/AlergiaNormal-Italic/AlergiaNormal-Italic.svg#AlergiaNormal-Italic') format('svg'),
-  url('../fonts/AlergiaNormal-Italic/AlergiaNormal-Italic.eot?#iefix') format('embedded-opentype');
+  font-family: 'alergia_normalitalic';
+  src: url('../fonts/AlergiaNormal-Italic/borutta_group_-_alergia_normal_italic-webfont.eot');
+  src: url('../fonts/AlergiaNormal-Italic/borutta_group_-_alergia_normal_italic-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/AlergiaNormal-Italic/borutta_group_-_alergia_normal_italic-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+
 }
 
-//AlergiaNormal-Bolditalic font
+
+//AlergiaNormal-Regular font
 
 @font-face {
-  font-family: 'AlergiaNormal-Bolditalic';
-  src: url('../fonts/AlergiaNormal-Bolditalic/AlergiaNormal-Bolditalic.eot');
-  src: url('../fonts/AlergiaNormal-Bolditalic/AlergiaNormal-Bolditalic.woff2') format('woff2'),
-  url('../fonts/AlergiaNormal-Bolditalic/AlergiaNormal-Bolditalic.woff') format('woff'),
-  url('../fonts/AlergiaNormal-Bolditalic/AlergiaNormal-Bolditalic.ttf') format('truetype'),
-  url('../fonts/AlergiaNormal-Bolditalic/AlergiaNormal-Bolditalic.svg#AlergiaNormal-Bolditalic') format('svg'),
-  url('../fonts/AlergiaNormal-Bolditalic/AlergiaNormal-Bolditalic.eot?#iefix') format('embedded-opentype');
+  font-family: 'alergia_normalregular';
+  src: url('../fonts/AlergiaNormal-Regular/borutta_group_-_alergianormal-regular-webfont.eot');
+  src: url('../fonts/AlergiaNormal-Regular/borutta_group_-_alergianormal-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/AlergiaNormal-Regular/borutta_group_-_alergianormal-regular-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+
 }

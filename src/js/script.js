@@ -2,8 +2,6 @@ $(function() {
 	
     $("head").append("<link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' />");
 	
-	$("body").css("overflow-y","hidden");
-    
     //anchor links
 	
 	$(".slider").on("click","a.scroll-down-home", function (event) {
@@ -35,7 +33,7 @@ $(function() {
 	
 	//charts
 	
-	google.charts.load('current', {
+	/*google.charts.load('current', {
 		'packages': ['corechart']
 	});
 	google.charts.setOnLoadCallback(drawChart);
@@ -57,14 +55,13 @@ $(function() {
 		var chart = new google.visualization.PieChart(document.getElementById('piechart'));
 		
 		chart.draw(data, options);
-	}
+	}*/
 	
 	//menu
 	
 	$('nav li a').click(function () {
 		$('nav li').removeClass('active');
 		$(this).parent().addClass('active');
-		return true;
 	});
 	
 	//Scroll Top
@@ -209,6 +206,18 @@ $(function() {
 		focusOnSelect: true
 	});
 	
+	//vertical slider
+	
+	$('.vertical-slider').slick({
+		dots: true,
+		arrows: true,
+		vertical: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		verticalSwiping: true,
+		centerMode: true
+	});
+	
 	//change selector
 	
 	$('.step span').click(function() {
@@ -251,4 +260,3 @@ $(function() {
 	});
 	
 });
-

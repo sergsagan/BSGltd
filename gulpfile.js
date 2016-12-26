@@ -114,10 +114,10 @@ gulp.task('styles:vendor', function() {
 			          './dist/fonts/*.*'
 		          ]
 	          },
-            /*
-              "normalize.css": {
-                  "main": "./normalize.css"
-              },*/
+            
+              "bootstrap-vertical-tabs": {
+                  "main": "./bootstrap.vertical-tabs.css"
+              },
 
               "magnific-popup": {
                   "main": "./dist/magnific-popup.css"

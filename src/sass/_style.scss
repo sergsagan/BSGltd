@@ -1863,6 +1863,144 @@
   }
 }
 
+//news
+
+.news{
+  width: 100%;
+  max-width: 1920px;
+  height: auto;
+  min-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  padding: 30vh 0 10vh;
+  background-color: #fff;
+
+  .heading{
+	color: #616161;
+	font-family: $ANB;
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 30px;
+  }
+  .tabs-left {
+	border-right: 1px solid #ddd;
+	margin-bottom: 50px;
+  }
+  .nav-tabs {
+	li{
+	  border-bottom: 1px solid #e6e6e6;
+	  margin-right: 15px;
+
+	  &:last-child{
+		border-bottom: none;
+	  }
+	}
+  }
+  .nav-tabs > li.active > a,
+  .nav-tabs > li.active > a:hover,
+  .nav-tabs > li.active > a:focus {
+	color: #e06e3d;
+	font-family: $ANR;
+	font-size: 18px;
+	font-weight: 400;
+	background-color: #fff;
+	border: none;
+
+	span{
+	  color: #ee9576;
+	  font-family: $ANR;
+	  font-size: 12px;
+	  font-weight: 700;
+	  line-height: 24px;
+	}
+  }
+  .nav-tabs > li > a,
+  .nav-tabs > li > a:hover,
+  .nav-tabs > li > a:focus {
+	color: #808080;
+	font-family: $ANR;
+	font-size: 18px;
+	font-weight: 400;
+	background-color: #fff;
+	border: none;
+
+	span{
+	  color: #999999;
+	  font-family: $ANR;
+	  font-size: 12px;
+	  font-weight: 700;
+	  line-height: 24px;
+	}
+  }
+
+  .nav > li > a:hover, .nav > li > a:focus {
+	text-decoration: none;
+	background-color: transparent;
+  }
+  .tabs-left>li>a {
+	border-radius: 0;
+	margin-right: 0;
+	display: block;
+  }
+  .tab-pane{
+	padding: 4vw 0 0 5vw;
+  }
+
+  figure{
+	margin: 0 auto 50px;
+  }
+  .title{
+	color: #4d4d4d;
+	font-family: $ANR;
+	font-size: 21px;
+	font-weight: 400;
+	margin-bottom: 25px;
+  }
+  .text{
+	max-width: 58vw;
+	width: 100%;
+	p{
+	  color: #707070;
+	  font-family: $ANR;
+	  font-size: 15px;
+	  font-weight: 400;
+	  line-height: 20px;
+	  margin-bottom: 20px;
+	}
+  }
+  #calendar {
+	width: 100%;
+	font: $ANR;
+	line-height: 1.2em;
+	font-size: 15px;
+	text-align: center;
+  }
+  #calendar thead tr:last-child {
+	font-size: small;
+	color: rgb(85, 85, 85);
+  }
+  #calendar thead tr:nth-child(1) td:nth-child(2) {
+	color: rgb(50, 50, 50);
+  }
+  #calendar thead tr:nth-child(1) td:nth-child(1):hover, #calendar2 thead tr:nth-child(1) td:nth-child(3):hover {
+	cursor: pointer;
+  }
+  #calendar tbody td {
+	color: #808080;
+	font-family: $ANR;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 30px;
+  }
+  #calendar tbody td:nth-child(n+6), #calendar2 .holiday {
+	color: rgb(231, 140, 92);
+  }
+  #calendar tbody td.today {
+	background-color: #ee9576;
+	color: #fff;
+  }
+}
+
 //footer
 
 .footer{

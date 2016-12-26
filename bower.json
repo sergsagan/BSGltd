@@ -22,6 +22,7 @@
     "jquery.maskedinput": "~1.4.1",
     "jquery.sticky": "~1.0.0",
     "wow": "~1.1.2",
-    "ionrangeslider":"~2.1.5"
+    "ionrangeslider":"~2.1.5",
+    "bootstrap-vertical-tabs": "~1.2.2"
   }
 }

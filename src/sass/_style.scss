@@ -887,7 +887,7 @@
 		margin-top: 20px;
 		margin-bottom: 0;
 
-		figure{
+		.task{
 		  margin: 5px auto 30px;
 		  display: inline-block;
 		  opacity: 0.5;
@@ -1168,6 +1168,7 @@
 			position: relative;
 			display: block;
 			margin-bottom: 15px;
+			color:#ee9476;
 
 			&:before {
 			  content: "";
@@ -1213,6 +1214,8 @@
 			line-height: 12px;
 			position: relative;
 			margin-bottom: 30px;
+			color:#ee9476;
+
 			&:before {
 			  content: "";
 			  display: block;
@@ -1268,6 +1271,7 @@
 			font-size: 13px;
 			font-weight: 700;
 			text-decoration: none;
+			background-image: linear-gradient(to right, #ee9377 0%, #e8a66b 100%);
 
 			&:hover {
 			  text-decoration: none;
@@ -1284,6 +1288,7 @@
 			font-size: 13px;
 			font-weight: 700;
 			text-decoration: none;
+			background-image: linear-gradient(to right, #ee9377 0%, #e8a66b 100%);
 
 			&:hover {
 			  text-decoration: none;

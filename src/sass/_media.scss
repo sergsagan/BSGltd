@@ -511,6 +511,58 @@
 	font-size: 18px;
 	margin-bottom: 5px;
   }
+  .first {
+	padding: 20vh 0 10vh;
+  }
+  .first .left-block .heading, .first .right-block .heading {
+	font-size: 22px;
+  }
+  .first .left-block p, .first .right-block p {
+	font-size: 17px;
+	line-height: 22px;
+  }
+  .first .requisites .description {
+	font-size: 17px;
+	line-height: 22px;
+  }
+  .first .requisites figure figcaption span {
+	font-size: 15px;
+	line-height: 15px;
+  }
+  .two .rate-description .descr {
+	font-size: 15px;
+	line-height: 22px;
+  }
+  .two .rate-description .heading {
+	font-size: 18px;
+  }
+  .two .rate-description .one-char,
+  .two .rate-description .two-char,
+  .two .rate-description .three-char {
+	font-size: 15px;
+  }
+  .two .rate-description .one-offer,
+  .two .rate-description .two-offer,
+  .two .rate-description .three-offer {
+	font-size: 15px;
+  }
+  .profit, .invest {
+	max-width: 188px;
+	height: 34px;
+	line-height: 26px;
+	font-size: 15px;
+  }
+  .two .other-block .heading {
+	font-size: 22px;
+  }
+  .two .other-block p {
+	font-size: 17px;
+	line-height: 22px;
+  }
+  .two .vertical-slider .rate figure figcaption {
+	font-size: 17px;
+	line-height: 22px;
+  }
 }
 
 @media only screen and (min-width: 1681px) and (max-width: 1920px) {
@@ -665,7 +717,6 @@
   .main-4 .information .heading {
 	font-size: 24px;
   }
-
   .footer {
 	height: 150px;
 	margin: -150px auto;
@@ -674,5 +725,57 @@
   .footer .copyright span {
 	font-size: 18px;
 	margin-bottom: 5px;
+  }
+  .first {
+	padding: 20vh 0 10vh;
+  }
+  .first .left-block .heading, .first .right-block .heading {
+	font-size: 24px;
+  }
+  .first .left-block p, .first .right-block p {
+	font-size: 18px;
+	line-height: 24px;
+  }
+  .first .requisites .description {
+	font-size: 18px;
+	line-height: 24px;
+  }
+  .first .requisites figure figcaption span {
+	font-size: 16px;
+	line-height: 16px;
+  }
+  .two .rate-description .descr {
+	font-size: 16px;
+	line-height: 24px;
+  }
+  .two .rate-description .heading {
+	font-size: 20px;
+  }
+  .two .rate-description .one-char,
+  .two .rate-description .two-char,
+  .two .rate-description .three-char {
+	font-size: 16px;
+  }
+  .two .rate-description .one-offer,
+  .two .rate-description .two-offer,
+  .two .rate-description .three-offer {
+	font-size: 16px;
+  }
+  .profit, .invest {
+	max-width: 188px;
+	height: 34px;
+	line-height: 28px;
+	font-size: 16px;
+  }
+  .two .other-block .heading {
+	font-size: 24px;
+  }
+  .two .other-block p {
+	font-size: 18px;
+	line-height: 24px;
+  }
+  .two .vertical-slider .rate figure figcaption {
+	font-size: 18px;
+	line-height: 24px;
   }
 }

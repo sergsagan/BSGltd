@@ -1,58 +1,61 @@
-//AlergiaNormal-Bolditalic font
+//AlergiaNormalBolditalic font
 
 @font-face {
-  font-family: 'alergia_normalbold_italic';
-  src: url('../fonts/AlergiaNormal-Bolditalic/borutta_group_-_alergia_normal_bold_italic-webfont.eot');
-  src: url('../fonts/AlergiaNormal-Bolditalic/borutta_group_-_alergia_normal_bold_italic-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/AlergiaNormal-Bolditalic/borutta_group_-_alergia_normal_bold_italic-webfont.ttf') format('truetype');
+  font-family: 'AlergiaNormalBoldItalic';
+  src: url('../fonts/AlergiaNormalBoldItalic/BORUTTA GROUP - Alergia Normal Bold Italic.eot');
+  src: local('☺'), url('../fonts/AlergiaNormalBoldItalic/BORUTTA GROUP - Alergia Normal Bold Italic.woff') format('woff'),
+  url('../fonts/AlergiaNormalBoldItalic/BORUTTA GROUP - Alergia Normal Bold Italic.ttf') format('truetype'),
+  url('../fonts/AlergiaNormalBoldItalic/BORUTTA GROUP - Alergia Normal Bold Italic.svg') format('svg');
   font-weight: normal;
   font-style: normal;
-
 }
 
-//AlergiaNormal-Bold font
+//AlergiaNormalBold font
 
 @font-face {
-  font-family: 'alergia_normalbold';
-  src: url('../fonts/AlergiaNormal-Bold/borutta_group_-_alergia_normal_bold-webfont.eot');
-  src: url('../fonts/AlergiaNormal-Bold/borutta_group_-_alergia_normal_bold-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/AlergiaNormal-Bold/borutta_group_-_alergia_normal_bold-webfont.ttf') format('truetype');
+  font-family: 'AlergiaNormalBold';
+  src: url('../fonts/AlergiaNormalBold/BORUTTA GROUP - Alergia Normal Bold.eot');
+  src: local('☺'), url('../fonts/AlergiaNormalBold/BORUTTA GROUP - Alergia Normal Bold.woff') format('woff'),
+  url('../fonts/AlergiaNormalBold/BORUTTA GROUP - Alergia Normal Bold.ttf') format('truetype'),
+  url('../fonts/AlergiaNormalBold/BORUTTA GROUP - Alergia Normal Bold.svg') format('svg');
   font-weight: normal;
   font-style: normal;
-
-}
-
-
-//AlergiaNormal-Italic font
-
-@font-face {
-  font-family: 'alergia_normalitalic';
-  src: url('../fonts/AlergiaNormal-Italic/borutta_group_-_alergia_normal_italic-webfont.eot');
-  src: url('../fonts/AlergiaNormal-Italic/borutta_group_-_alergia_normal_italic-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/AlergiaNormal-Italic/borutta_group_-_alergia_normal_italic-webfont.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-
 }
 
 
-//AlergiaNormal-Regular font
+//AlergiaNormalItalic font
 
 @font-face {
-  font-family: 'alergia_normalregular';
-  src: url('../fonts/AlergiaNormal-Regular/borutta_group_-_alergianormal-regular-webfont.eot');
-  src: url('../fonts/AlergiaNormal-Regular/borutta_group_-_alergianormal-regular-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/AlergiaNormal-Regular/borutta_group_-_alergianormal-regular-webfont.ttf') format('truetype');
+  font-family: 'AlergiaNormalItalic';
+  src: url('../fonts/AlergiaNormalItalic/BORUTTA GROUP - Alergia Normal Italic.eot');
+  src: local('☺'), url('../fonts/AlergiaNormalItalic/BORUTTA GROUP - Alergia Normal Italic.woff') format('woff'),
+  url('../fonts/AlergiaNormalItalic/BORUTTA GROUP - Alergia Normal Italic.ttf') format('truetype'),
+  url('../fonts/AlergiaNormalItalic/BORUTTA GROUP - Alergia Normal Italic.svg') format('svg');
   font-weight: normal;
   font-style: normal;
-
 }
+
+
+//AlergiaNormalRegular font
+
+@font-face {
+  font-family: 'AlergiaNormalRegular';
+  src: url('../fonts/AlergiaNormalRegular/BORUTTA GROUP - AlergiaNormal-Regular.eot');
+  src: local('☺'), url('../fonts/AlergiaNormalRegular/BORUTTA GROUP - AlergiaNormal-Regular.woff') format('woff'),
+  url('../fonts/AlergiaNormalRegular/BORUTTA GROUP - AlergiaNormal-Regular.ttf') format('truetype'),
+  url('../fonts/AlergiaNormalRegular/BORUTTA GROUP - AlergiaNormal-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 @font-face{
   font-family: 'slick';
   font-weight: normal;
   font-style: normal;
-
   src: url('../fonts/slick.eot');
-  src: url('../fonts/slick.eot?#iefix') format('embedded-opentype'), url('../fonts/slick.woff') format('woff'), url('../fonts/slick.ttf') format('truetype'), url('../fonts/slick.svg#slick') format('svg');
+  src: url('../fonts/slick.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/slick.woff') format('woff'),
+  url('../fonts/slick.ttf') format('truetype'),
+  url('../fonts/slick.svg#slick') format('svg');
 }

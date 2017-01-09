@@ -22,18 +22,19 @@
   .carousel-caption {
 	margin: auto;
 	position: absolute;
-	top: 15%;
+	top: 20%;
 	left: 45%;
-	-webkit-transform: translate(-40%, 25%);
-	transform: translate(-40%, 25%);
+	-webkit-transform: translate(-40%, 15%);
+	transform: translate(-40%, 15%);
 	padding-bottom: 0;
 	right: auto;
 
 	.title{
 	  color: #fff;
-	  font-family: $ANB;
-	  font-size: 28px;
-	  font-weight: 700;
+	  font-family: $ANR;
+	  font-size: 25px;
+	  line-height: 30px;
+	  font-weight: 400;
 	  margin-bottom: 30px;
 	}
 	.description{
@@ -42,7 +43,7 @@
 	  font-size: 16px;
 	  line-height: 20px;
 	  font-weight: 400;
-	  padding: 0 21px;
+	  padding: 0 15vh;
 	  text-align: center;
 	}
   }
@@ -76,8 +77,32 @@
   .page-indicator{
 	background-color: transparent;
 	position: absolute;
-	top: 40%;
+	top: 45%;
 	left: 0;
+
+	.page{
+	  opacity: 1;
+	  font-family: $ANR;
+	  font-size: 75px;
+	  font-weight: 400;
+	  display: inline-block;
+	  vertical-align: middle;
+	}
+	.vertical{
+	  width: 4px;
+	  height: 58px;
+	  opacity: 1;
+	  display: inline-block;
+	  vertical-align: middle;
+	  margin-right: 10px;
+	}
+	sub{
+	  opacity: 1;
+	  font-family: "AlergiaNormalRegular", sans-serif;
+	  font-size: 25px;
+	  font-weight: 400;
+	  bottom: -1em;
+	}
   }
 
 }
@@ -120,7 +145,7 @@
 	height: auto;
 	padding: 26px 15px;
 	color: transparent;
-	margin-right: 60px;
+	margin-right: 15px;
   }
 
   .navbar-nav {
@@ -134,7 +159,7 @@
 
   .navbar-default .navbar-nav > li > a {
 	color: white;
-	font-size: 17px;
+	font-size: 16px;
 	font-weight: 400;
 	cursor: pointer;
 	font-family: $ANR;
@@ -146,7 +171,7 @@
 	li {
 	  a {
 		padding: 23px 0 0;
-		margin: 0 20px 0;
+		margin: 0 25px 0;
 		border-bottom: 2px solid transparent;
 		@include transition(all .6s);
 
@@ -187,13 +212,13 @@
 	.registr{
 	  color: #6e6e6e;
 	  font-family: $ANR;
-	  font-size: 17px;
-	  line-height: 26px;
+	  font-size: 15px;
+	  line-height: 24px;
 	  font-weight: 400;
 	  text-decoration: none;
 	  width: 150px;
-	  height: 32px;
-	  border-radius: 10px;
+	  height: 30px;
+	  border-radius: 8px;
 	  background-color: #fff;
 	  text-align: center;
 	  display: inline-block;
@@ -217,18 +242,19 @@
 	.login{
 	  color: #fff;
 	  font-family: $ANR;
-	  font-size: 17px;
-	  line-height: 26px;
+	  font-size: 15px;
+	  line-height: 24px;
 	  font-weight: 400;
 	  text-decoration: none;
 	  width: 80px;
-	  height: 32px;
-	  border-radius: 10px;
+	  height: 30px;
+	  border-radius: 8px;
 	  border: 2px solid #fff;
 	  display: inline-block;
 	  text-align: center;
 	  @include transition(all 0.5s);
 	  vertical-align: middle;
+	  margin-left: 5px;
 
 	  img {
 		vertical-align: baseline;
@@ -284,7 +310,7 @@
 	height: auto;
 	padding: 26px 15px;
 	color: transparent;
-	margin-right: 60px;
+	margin-right: 15px;
   }
 
   .navbar-nav {
@@ -298,7 +324,7 @@
 
   .navbar-default .navbar-nav > li > a {
 	color: white;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 400;
 	cursor: pointer;
 	font-family: $ANR;
@@ -310,7 +336,7 @@
 	li {
 	  a {
 		padding: 23px 0 0;
-		margin: 0 20px 0;
+		margin: 0 25px 0;
 		border-bottom: 2px solid transparent;
 		@include transition(all .6s);
 
@@ -351,7 +377,7 @@
 	.registr{
 	  color: #6e6e6e;
 	  font-family: $ANR;
-	  font-size: 17px;
+	  font-size: 16px;
 	  line-height: 26px;
 	  font-weight: 400;
 	  text-decoration: none;
@@ -380,7 +406,7 @@
 	.login{
 	  color: #fff;
 	  font-family: $ANR;
-	  font-size: 17px;
+	  font-size: 16px;
 	  line-height: 26px;
 	  font-weight: 400;
 	  text-decoration: none;
@@ -391,6 +417,7 @@
 	  display: inline-block;
 	  text-align: center;
 	  @include transition(all 0.5s);
+	  margin-left: 5px;
 
 	  img {
 		vertical-align: baseline;
@@ -425,7 +452,7 @@
 
 .menu{
   width: 100%;
-  max-width: 400px;
+  max-width: 350px;
   height: auto;
   background-color: white;
   margin: auto;
@@ -445,7 +472,7 @@
   ul > li > a{
 	color: #6e6e6e;
 	font-family: $ANR;
-	font-size: 100px;
+	font-size: 60px;
 	font-weight: 400;
 	text-decoration: none;
 	padding: 0 14px;
@@ -456,10 +483,10 @@
 	span{
 	  color: #6e6e6e;
 	  font-family: $ANR;
-	  font-size: 20px;
+	  font-size: 15px;
 	  font-weight: 400;
 	  display: block;
-	  margin-top: -25px;
+	  margin-top: -15px;
 	}
   }
   .menu-list li:hover a,
@@ -470,7 +497,7 @@
   ul > li > a.active{
 	color: #e9a46c;
 	font-family: $ANR;
-	font-size: 100px;
+	font-size: 60px;
 	font-weight: 400;
 	span{
 	  color: #e9a46c;
@@ -480,8 +507,8 @@
   ul{
 	li{
 	  .vert{
-		width: 5px;
-		height: 88px;
+		width: 4px;
+		height: 50px;
 		background-color: #ebebeb;
 		display: inline-block;
 		vertical-align: middle;
@@ -620,12 +647,20 @@
 
   .send{
 	width: 150px;
-	height: 32px;
+	height: 30px;
 	border-radius: 6px;
 	color: #fff;
-	font-family: $ANB;
-	font-size: 16px;
-	font-weight: 700;
+	font-family: $ANR;
+	font-size: 13px;
+	font-weight: 400;
+	text-decoration: none;
+	display: block;
+	line-height: 28px;
+	margin: 0 auto;
+
+	&:hover{
+	  text-decoration: none;
+	}
   }
 }
 
@@ -634,10 +669,10 @@
 .overlay {
   z-index: 100;
   position: fixed;
-  background-color: #000;
-  opacity: 0.52;
-  -moz-opacity: 0.52;
-  filter: alpha(opacity=52);
+  background-color: #2d2d2d;
+  opacity: 0.2;
+  -moz-opacity: 0.2;
+  filter: alpha(opacity=2);
   width: 100%;
   height: 100%;
   top: 0;
@@ -649,10 +684,10 @@
 .overlay2 {
   z-index: 100;
   position: fixed;
-  background-color: #000;
-  opacity: 0.52;
-  -moz-opacity: 0.52;
-  filter: alpha(opacity=52);
+  background-color: #2d2d2d;
+  opacity: 0.2;
+  -moz-opacity: 0.2;
+  filter: alpha(opacity=2);
   width: 100%;
   height: 100%;
   top: 0;
@@ -739,31 +774,31 @@
   .page-indicator{
 	background-color: transparent;
 	position: absolute;
-	top: 40%;
+	top: 45%;
 	left: 0;
 
 	.page{
 	  opacity: 1;
 	  font-family: $ANR;
-	  font-size: 125px;
+	  font-size: 75px;
 	  font-weight: 400;
 	  display: inline-block;
 	  vertical-align: middle;
 	}
 	.vertical{
-	  width: 5px;
-	  height: 88px;
+	  width: 4px;
+	  height: 58px;
 	  opacity: 1;
 	  display: inline-block;
 	  vertical-align: middle;
-	  margin-right: 20px;
+	  margin-right: 10px;
 	}
 	sub{
 	  opacity: 1;
-	  font-family: $ANR;
-	  font-size: 30px;
+	  font-family: "AlergiaNormalRegular", sans-serif;
+	  font-size: 25px;
 	  font-weight: 400;
-	  bottom: -1.25em;
+	  bottom: -1em;
 	}
   }
 
@@ -809,24 +844,24 @@
   }
 
   .block-text{
-	margin-bottom: 30px;
+	margin-bottom: 0;
 
 	.step-for-one{
 	  margin-top: 15vh;
 
 	  .title{
 		color: #616161;
-		font-family:$ANB;
-		font-size: 24px;
+		font-family:$ANR;
+		font-size: 22px;
 		line-height: 25px;
-		font-weight: 700;
+		font-weight: 400;
 		text-align: center;
 		margin-bottom: 10px;
 	  }
 	  .description{
 		color: #808080;
 		font-family: $ANR;
-		font-size: 15px;
+		font-size: 14px;
 		line-height: 18px;
 		font-weight: 400;
 		text-align: center;
@@ -841,13 +876,13 @@
 	  .title{
 		font-size: 22px;
 		margin-bottom: 5px;
-		font-weight: 700;
+		font-weight: 400;
 		margin-top: 11vh;
 	  }
 
 	  .description{
 		margin-bottom: 40px;
-		font-size: 15px;
+		font-size: 14px;
 		font-weight: 400;
 		font-family: $ANR;
 	  }
@@ -866,9 +901,9 @@
 
 		  .heading{
 			color: #616161;
-			font-family: $ANB;
-			font-size: 16px;
-			font-weight: 700;
+			font-family: $ANR;
+			font-size: 15px;
+			font-weight: 400;
 			text-align: center;
 		  }
 		  span{
@@ -894,24 +929,26 @@
 
 		  img{
 			margin: 0 auto 10px;
+			width: 30px;
+			text-align: center;
 		  }
 
 		  figcaption{
-			max-width: 179px;
+			max-width: 170px;
 			width: 100%;
 
 			.heading{
 			  color: #616161;
-			  font-family: $ANB;
-			  font-size: 14px;
-			  font-weight: 700;
+			  font-family: $ANR;
+			  font-size: 13px;
+			  font-weight: 400;
 			  text-align: center;
 			  margin-bottom: 5px;
 			}
 			span{
 			  color: #808080;
 			  font-family: $ANR;
-			  font-size: 12px;
+			  font-size: 11px;
 			  line-height: 15px;
 			  font-weight: 400;
 			  display: block;
@@ -920,25 +957,42 @@
 		}
 
 		.select{
-		  width: 179px;
+		  width: 170px;
 		  height: auto;
 		  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
 		  border-radius: 6px;
 		  background-color: transparent;
 		  padding: 10px 0;
 		  opacity: 1;
+
+		  .heading{
+			color: #616161;
+			font-family: $ANR;
+			font-size: 13px;
+			font-weight: 400;
+			text-align: center;
+			margin-bottom: 5px;
+		  }
+		  span{
+			color: #808080;
+			font-family: $ANR;
+			font-size: 11px;
+			line-height: 15px;
+			font-weight: 400;
+			display: block;
+		  }
 		}
 	  }
 
 	  .title{
-		font-size: 25px;
-		font-weight: 700;
+		font-size: 22px;
+		font-weight: 400;
 		line-height: 36px;
 	  }
 	  .text{
 		color: #808080;
 		font-family: $ANR;
-		font-size: 14px;
+		font-size: 13px;
 		font-weight: 400;
 		text-align: center;
 		width: 42vw;
@@ -952,15 +1006,15 @@
 	text-align: center;
 	width: 100%;
 	max-width: 600px;
-	margin: 0 auto;
+	margin: -20px auto 0;
 
 	.slider-nav{
 	  .step{
 		display: block;
 		color: #616161;
-		font-family: $ANB;
+		font-family: $ANR;
 		font-size: 15px;
-		font-weight: 700;
+		font-weight: 400;
 
 		.top-line{
 		  width: 200px;
@@ -975,6 +1029,7 @@
 		  height: 8px;
 		  border-radius: 4px;
 		  display: block;
+		  background-image: linear-gradient(to right, #f38b4c 0%, #ffaf67 100%);
 		}
 
 	  }
@@ -982,7 +1037,7 @@
 		width: 200px;
 		height: 8px;
 		border-radius: 4px;
-		background-image: linear-gradient(to right, #ffa083 0%, #f4b073 100%);
+		background-image: linear-gradient(to right, #f38b4c 0%, #ffaf67 100%);
 		display: block;
 	  }
 	}
@@ -1000,34 +1055,34 @@
   padding: 20vh 0 10vh;
   background-color: #fff;
 
-  .page-indicator {
+  .page-indicator{
 	background-color: transparent;
 	position: absolute;
-	top: 40%;
+	top: 45%;
 	left: 0;
 
-	.page {
+	.page{
 	  opacity: 1;
 	  font-family: $ANR;
-	  font-size: 125px;
+	  font-size: 75px;
 	  font-weight: 400;
 	  display: inline-block;
 	  vertical-align: middle;
 	}
-	.vertical {
-	  width: 5px;
-	  height: 88px;
+	.vertical{
+	  width: 4px;
+	  height: 58px;
 	  opacity: 1;
 	  display: inline-block;
 	  vertical-align: middle;
-	  margin-right: 20px;
+	  margin-right: 10px;
 	}
-	sub {
+	sub{
 	  opacity: 1;
-	  font-family: $ANR;
-	  font-size: 30px;
+	  font-family: "AlergiaNormalRegular", sans-serif;
+	  font-size: 25px;
 	  font-weight: 400;
-	  bottom: -1.25em;
+	  bottom: -1em;
 	}
   }
 
@@ -1082,20 +1137,20 @@
 
 	  .slide-information {
 		margin-top: 50px;
-		margin-bottom: 40px;
+		margin-bottom: 0;
 
 		.heading {
 		  color: #616161;
-		  font-family: $ANB;
-		  font-size: 21px;
-		  font-weight: 700;
+		  font-family: $ANR;
+		  font-size: 22px;
+		  font-weight: 400;
 		  text-align: left;
 		  margin-bottom: 10px;
 		}
 		.description {
 		  color: #808080;
 		  font-family: $ANR;
-		  font-size: 15px;
+		  font-size: 14px;
 		  font-weight: 400;
 		  text-align: left;
 		  margin-bottom: 10px;
@@ -1106,7 +1161,7 @@
 
 		li {
 		  font-family: $ANR;
-		  font-size: 15px;
+		  font-size: 14px;
 		  font-weight: 400;
 		  color: #808080;
 		  text-align: left;
@@ -1117,8 +1172,9 @@
 		  margin-bottom: 10px;
 
 		  span {
+			font-size: 14px;
 			color: #616161;
-			font-weight: bold;
+			font-weight: normal;
 			text-transform: uppercase;
 		  }
 
@@ -1162,9 +1218,9 @@
 		  text-align: center;
 
 		  .title {
-			font-family: $ANB;
+			font-family: $ANR;
 			font-size: 15px;
-			font-weight: 700;
+			font-weight: 400;
 			position: relative;
 			display: block;
 			margin-bottom: 15px;
@@ -1207,14 +1263,14 @@
 			border-radius: 12px;
 			border: 1px solid #e6e6e6;
 			background-color: #fff;
-			font-family: $ANB;
+			font-family: $ANR;
 			font-size: 14px;
-			font-weight: 700;
+			font-weight: 00;
 			padding: 5px;
 			line-height: 12px;
 			position: relative;
 			margin-bottom: 30px;
-			color:#ee9476;
+			color: #ee9476;
 
 			&:before {
 			  content: "";
@@ -1262,16 +1318,18 @@
 
 		  .calc {
 			display: inline-block;
-			width: 105px;
-			height: 26px;
-			line-height: 26px;
+			outline: none;
+			margin-right: 10px;
+			width: 100px;
+			height: 24px;
+			line-height: 23px;
 			border-radius: 6px;
 			color: #fff;
-			font-family: $ANB;
-			font-size: 13px;
-			font-weight: 700;
+			font-family: $ANR;
+			font-size: 12px;
+			font-weight: 400;
 			text-decoration: none;
-			background-image: linear-gradient(to right, #ee9377 0%, #e8a66b 100%);
+			background-image: linear-gradient(to right, #f38b4c 0%, #ffaf67 100%);
 
 			&:hover {
 			  text-decoration: none;
@@ -1279,16 +1337,17 @@
 		  }
 		  .selec {
 			display: inline-block;
-			width: 105px;
-			height: 26px;
-			line-height: 26px;
+			outline: none;
+			width: 100px;
+			height: 24px;
+			line-height: 23px;
 			border-radius: 6px;
 			color: #fff;
-			font-family: $ANB;
-			font-size: 13px;
-			font-weight: 700;
+			font-family: $ANR;
+			font-size: 12px;
+			font-weight: 400;
 			text-decoration: none;
-			background-image: linear-gradient(to right, #ee9377 0%, #e8a66b 100%);
+			background-image: linear-gradient(to right, #f38b4c 0%, #ffaf67 100%);
 
 			&:hover {
 			  text-decoration: none;
@@ -1298,7 +1357,7 @@
 		.select {
 		  width: 240px;
 		  height: auto;
-		  border: 2px solid #ee9377;
+		  border: 2px solid #f38b4c;
 		  background-color: #fff;
 		  position: relative;
 
@@ -1309,8 +1368,8 @@
 			top: 0;
 			left: 0;
 			border: 30px solid transparent;
-			border-left: 30px solid #ed9774;
-			border-top: 30px solid #ed9774;
+			border-left: 30px solid #f38b4c;
+			border-top: 30px solid #f38b4c;
 		  }
 		  &:after {
 			content: "";
@@ -1330,7 +1389,7 @@
 
 	  .user-information {
 		text-align: center;
-		padding-top: 50px;
+		padding-top: 100px;
 
 		figure {
 		  margin: 0 auto;
@@ -1346,7 +1405,7 @@
 		  margin-bottom: 25px;
 		}
 		.name {
-		  color: #ec8d70;
+		  color: #f38b4c;
 		  font-family: $ANR;
 		  font-size: 14px;
 		  font-weight: 400;
@@ -1354,7 +1413,7 @@
 	  }
 
 	  .user-data {
-		padding-top: 50px;
+		padding-top: 100px;
 
 		.block-1 {
 		  display: inline-block;
@@ -1362,9 +1421,9 @@
 
 		  span {
 			color: #616161;
-			font-family: $ANB;
+			font-family: $ANR;
 			font-size: 30px;
-			font-weight: 700;
+			font-weight: 400;
 			display: block;
 			text-align: center;
 			line-height: 35px;
@@ -1386,9 +1445,9 @@
 
 		  span {
 			color: #616161;
-			font-family: $ANB;
+			font-family: $ANR;
 			font-size: 30px;
-			font-weight: 700;
+			font-weight: 400;
 			display: block;
 			text-align: center;
 			line-height: 35px;
@@ -1412,16 +1471,16 @@
 	text-align: center;
 	width: 100%;
 	max-width: 600px;
-	margin: 0 auto;
+	margin: -50px auto 0;
 
 	.slider-nav {
 
 	  .step {
 		display: block;
 		color: #616161;
-		font-family: $ANB;
+		font-family: $ANR;
 		font-size: 15px;
-		font-weight: 700;
+		font-weight: 400;
 
 		.top-line {
 		  width: 200px;
@@ -1436,21 +1495,14 @@
 		  height: 8px;
 		  border-radius: 4px;
 		  display: block;
+		  background-image: linear-gradient(to right, #f38b4c 0%, #ffaf67 100%);
 		}
-		.orange{
-		  width: 200px;
-		  height: 8px;
-		  border-radius: 4px;
-		  background-image: linear-gradient(to right, #ffa083 0%, #f4b073 100%);
-		  display: block;
-		}
-
 	  }
 	  .step:hover .top-line {
 		width: 200px;
 		height: 8px;
 		border-radius: 4px;
-		background-image: linear-gradient(to right, #ffa083 0%, #f4b073 100%);
+		background-image: linear-gradient(to right, #f38b4c 0%, #ffaf67 100%);
 		display: block;
 	  }
 	}
@@ -1464,53 +1516,53 @@
   min-width: 1000px;
   margin: 0 auto;
   position: relative;
-  padding: 19vh 0 5vh;
+  padding: 25vh 0 5vh;
   background-color: #fff;
 
-  .page-indicator {
+  .page-indicator{
 	background-color: transparent;
 	position: absolute;
 	top: 40%;
 	left: 0;
 
-	.page {
+	.page{
 	  opacity: 1;
 	  font-family: $ANR;
-	  font-size: 125px;
+	  font-size: 75px;
 	  font-weight: 400;
 	  display: inline-block;
 	  vertical-align: middle;
 	}
-	.vertical {
-	  width: 5px;
-	  height: 88px;
+	.vertical{
+	  width: 4px;
+	  height: 58px;
 	  opacity: 1;
 	  display: inline-block;
 	  vertical-align: middle;
-	  margin-right: 20px;
+	  margin-right: 10px;
 	}
-	sub {
+	sub{
 	  opacity: 1;
-	  font-family: $ANR;
-	  font-size: 30px;
+	  font-family: "AlergiaNormalRegular", sans-serif;
+	  font-size: 25px;
 	  font-weight: 400;
-	  bottom: -1.25em;
+	  bottom: -1em;
 	}
   }
 
   .title {
 	color: #616161;
-	font-family: $ANB;
-	font-size: 21px;
+	font-family: $ANR;
+	font-size: 22px;
 	line-height: 25px;
-	font-weight: 700;
+	font-weight: 400;
 	text-align: center;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
   }
   .description {
 	color: #808080;
 	font-family: $ANR;
-	font-size: 15px;
+	font-size: 14px;
 	font-weight: 400;
 	text-align: center;
 	margin-bottom: 50px;
@@ -1519,20 +1571,21 @@
   .information{
 	max-width: 265px;
 	height: auto;
-	border: 1px solid #616161;
-	padding: 5px 10px;
+	padding: 10px 20px 5px;
+	border-radius: 4px;
+	border: 1px solid #e6e6e6;
 
 	.heading{
 	  color: #616161;
-	  font-family: $ANB;
-	  font-size: 18px;
-	  font-weight: 700;
+	  font-family: $ANR;
+	  font-size: 16px;
+	  font-weight: 400;
 	}
 
 	p{
 	  color: #808080;
 	  font-family: $ANR;
-	  font-size: 12px;
+	  font-size: 11px;
 	  font-weight: 400;
 	}
   }
@@ -1540,9 +1593,9 @@
   .feadback{
 	.title{
 	  color: #616161;
-	  font-family: $ANB;
+	  font-family: $ANR;
 	  font-size: 18px;
-	  font-weight: 700;
+	  font-weight: 400;
 	  text-align: left;
 	}
   }
@@ -1558,7 +1611,7 @@
   min-width: 1000px;
   margin: 0 auto;
   position: relative;
-  padding: 30vh 0 10vh;
+  padding: 25vh 0 10vh;
   background-color: #fff;
 
   .left-block, .right-block{
@@ -1566,9 +1619,9 @@
 
 	.heading{
 	  color: #616161;
-	  font-family: $ANB;
+	  font-family: $ANR;
 	  font-size: 18px;
-	  font-weight: 700;
+	  font-weight: 400;
 	  margin-bottom: 30px;
 	}
 	p{
@@ -1582,12 +1635,12 @@
   }
   .vertical-line{
 	content: "";
-	background: url("../img/vertical.png") 0 0 no-repeat;
+	background: url("../img/vert.png") 0 0 no-repeat;
 	display: block;
 	position: absolute;
-	top: 8%;
+	top: 15%;
 	width: 33px;
-	height: 535px;
+	height: 415px;
   }
 
   .requisites{
@@ -1619,7 +1672,7 @@
 	a{
 	  text-decoration: none;
 	  display: inline-block;
-	  margin: 0 50px;
+	  margin: 0 30px;
 	  text-align: center;
 	}
   }
@@ -1737,7 +1790,7 @@
 
 	.rate{
 	  width: 100%;
-	  height:auto;
+	  height: 160px;
 	  margin-top: 15px;
 	  margin-bottom: 15px;
 
@@ -1769,6 +1822,13 @@
 		}
 	  }
 	}
+  }
+
+  .level{
+	margin: 0 auto;
+	position: absolute;
+	left: 50%;
+	top: 0;
   }
 
   .rate-description{
@@ -1865,6 +1925,25 @@
 	  display: block;
 	  text-align: right;
 	  margin-bottom: 15vh;
+
+	  .profit, .invest{
+		background-image: linear-gradient(to right, #f38b4c 0%, #ffaf67 100%);
+		line-height: 24px;
+		height: 26px;
+		max-width: 145px;
+		font-family: $ANR;
+		font-weight: 400;
+
+		&:hover, &:focus{
+		  text-decoration: none;
+		  color: white;
+		}
+	  }
+	  .invest{
+		margin-left: 10px;
+		max-width: 120px;
+		margin-right: 30px;
+	  }
 	}
 
   }
@@ -1903,14 +1982,14 @@
   min-width: 1000px;
   margin: 0 auto;
   position: relative;
-  padding: 30vh 0 10vh;
+  padding: 20vh 0 10vh;
   background-color: #fff;
 
   .heading{
 	color: #616161;
-	font-family: $ANB;
-	font-size: 18px;
-	font-weight: 700;
+	font-family: $ANR;
+	font-size: 16px;
+	font-weight: 400;
 	margin-bottom: 30px;
   }
   .tabs-left {
@@ -1920,7 +1999,8 @@
   .nav-tabs {
 	li{
 	  border-bottom: 1px solid #e6e6e6;
-	  margin-right: 15px;
+	  margin-right: 30px;
+	  margin-left: 15px;
 
 	  &:last-child{
 		border-bottom: none;
@@ -1932,15 +2012,16 @@
   .nav-tabs > li.active > a:focus {
 	color: #e06e3d;
 	font-family: $ANR;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 400;
 	background-color: #fff;
 	border: none;
+	margin-left: -20px;
 
 	span{
 	  color: #ee9576;
 	  font-family: $ANR;
-	  font-size: 12px;
+	  font-size: 11px;
 	  font-weight: 700;
 	  line-height: 24px;
 	}
@@ -1950,15 +2031,16 @@
   .nav-tabs > li > a:focus {
 	color: #808080;
 	font-family: $ANR;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 400;
 	background-color: #fff;
 	border: none;
+	margin-left: -20px;
 
 	span{
 	  color: #999999;
 	  font-family: $ANR;
-	  font-size: 12px;
+	  font-size: 11px;
 	  font-weight: 700;
 	  line-height: 24px;
 	}
@@ -2041,15 +2123,15 @@
   min-width: 1000px;
   margin: 0 auto;
   position: relative;
-  padding: 25vh 0 18vh;
+  padding: 20vh 0 18vh;
   background-color: #fff;
 
 
   .heading{
 	color: #6e6e6e;
-	font-family: $ANB;
+	font-family: $ANR;
 	font-size: 21px;
-	font-weight: 700;
+	font-weight: 400;
 	margin-bottom: 30px;
   }
 
@@ -2071,9 +2153,9 @@
 	  margin-bottom: 7vh;
 	  .title{
 		color: #616161;
-		font-family: $ANB;
+		font-family: $ANR;
 		font-size: 14px;
-		font-weight: 700;
+		font-weight: 400;
 		margin-bottom: 10px;
 	  }
 	  p{
@@ -2127,9 +2209,9 @@
 
   .heading{
 	color: #6e6e6e;
-	font-family: $ANB;
+	font-family: $ANR;
 	font-size: 21px;
-	font-weight: 700;
+	font-weight: 400;
 	padding-left: 0;
 	margin-bottom: 30px;
   }
@@ -2180,9 +2262,9 @@
 	  }
 	  .title{
 		color: #616161;
-		font-family: $ANB;
+		font-family: $ANR;
 		font-size: 13px;
-		font-weight: 700;
+		font-weight: 400;
 		margin-bottom: 10px;
 	  }
 	  p{
@@ -2245,9 +2327,9 @@
 	  }
 	  .title{
 		color: #616161;
-		font-family: $ANB;
+		font-family: $ANR;
 		font-size: 13px;
-		font-weight: 700;
+		font-weight: 400;
 		margin-bottom: 10px;
 	  }
 	  p{
@@ -2297,22 +2379,11 @@
 		  transform: translate(-50%, -50%);
 		}
 	  }
-	  /*.number:before{
-		content: "";
-		display: block;
-		position: absolute;
-		background: url("../img/media.png") 100% 50% no-repeat;
-		width: 188px;
-		height: 12px;
-		top: 38%;
-		left: 240%;
-		right: auto;
-	  }*/
 	  .title{
 		color: #616161;
-		font-family: $ANB;
+		font-family: $ANR;
 		font-size: 13px;
-		font-weight: 700;
+		font-weight: 400;
 		margin-bottom: 10px;
 	  }
 	  p{
@@ -2354,9 +2425,9 @@
 
   .heading{
 	color: #6e6e6e;
-	font-family: $ANB;
+	font-family: $ANR;
 	font-size: 18px;
-	font-weight: 700;
+	font-weight: 400;
 	margin-bottom: 15px;
   }
   .description{
@@ -2430,9 +2501,9 @@
 
   .heading{
 	color: #6e6e6e;
-	font-family: $ANB;
+	font-family: $ANR;
 	font-size: 18px;
-	font-weight: 700;
+	font-weight: 400;
 	margin-bottom: 15px;
   }
   .description{
@@ -2474,9 +2545,9 @@
 
   .heading{
 	color: #6e6e6e;
-	font-family: $ANB;
+	font-family: $ANR;
 	font-size: 18px;
-	font-weight: 700;
+	font-weight: 400;
 	margin-bottom: 15px;
   }
   .description{
@@ -2499,17 +2570,30 @@
   min-width: 1000px;
   margin: 0 auto;
   position: relative;
-  padding: 30vh 0 10vh;
+  padding: 20vh 0 10vh;
   background-color: #fff;
 
   .tabs-left {
-	border-right: 1px solid #ddd;
 	margin-bottom: 50px;
+	border-right: none;
+  }
+  .tabs-left {
+
+  }
+
+  .vert-line{
+	width: 1px;
+	height: 700px;
+	background-color: #e6e6e6;
+	position: absolute;
+	right: 0;
+	top: 10%;
   }
   .nav-tabs {
 	li{
 	  border-bottom: 1px solid #e6e6e6;
-	  margin-right: 15px;
+	  margin-right: 30px;
+	  margin-left: 15px;
 
 	  &:last-child{
 		border-bottom: none;
@@ -2521,38 +2605,27 @@
   .nav-tabs > li.active > a:focus {
 	color: #e06e3d;
 	font-family: $ANR;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 400;
 	background-color: #fff;
 	border: none;
 	margin-bottom: 15px;
+	margin-top: 10px;
+	margin-left: -20px;
 
-	span{
-	  color: #ee9576;
-	  font-family: $ANR;
-	  font-size: 12px;
-	  font-weight: 700;
-	  line-height: 24px;
-	}
   }
   .nav-tabs > li > a,
   .nav-tabs > li > a:hover,
   .nav-tabs > li > a:focus {
 	color: #808080;
 	font-family: $ANR;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 400;
 	background-color: #fff;
 	border: none;
+	margin-top: 10px;
 	margin-bottom: 15px;
-
-	span{
-	  color: #999999;
-	  font-family: $ANR;
-	  font-size: 12px;
-	  font-weight: 700;
-	  line-height: 24px;
-	}
+	margin-left: -20px;
   }
 
   .nav > li > a:hover, .nav > li > a:focus {
@@ -2628,7 +2701,7 @@
   .nav-tabs > li.active {
 	border: none;
 	box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
-	background-color: #ee9576;
+	background-image: linear-gradient(to right, #f38b4c 0%, #ffaf67 100%);
 	margin-left: -2px;
 
 	.title{
@@ -2756,14 +2829,14 @@
   min-width: 1000px;
   margin: 0 auto;
   position: relative;
-  padding: 30vh 0 10vh;
+  padding: 20vh 0 10vh;
   background-color: #fff;
 
   .heading{
 	color: #6e6e6e;
-	font-family: $ANB;
+	font-family: $ANR;
 	font-size: 18px;
-	font-weight: 700;
+	font-weight: 400;
 	margin-bottom: 15vh;
   }
   .left-block{
@@ -2782,9 +2855,9 @@
 
 	.title{
 	  color: #6e6e6e;
-	  font-family: $ANB;
+	  font-family: $ANR;
 	  font-size: 15px;
-	  font-weight: 700;
+	  font-weight: 400;
 	  margin-bottom: 30px;
 	}
 
@@ -2812,7 +2885,7 @@
 	  vertical-align: middle;
 	  height: 22px;
 	  width: 22px;
-	  margin: 0 5px 0 0;
+	  margin: 0 10px 0 0;
 	  background: url("../img/sprite-check.png");
 	}
 	input[type="checkbox"]:checked + label::before {
@@ -2844,6 +2917,13 @@
 		font-family: $ANR;
 		font-size: 14px;
 		font-weight: 400;
+		position: absolute;
+		display: block;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+
 	  }
 	}
 
@@ -2861,6 +2941,12 @@
 		font-family: $ANR;
 		font-size: 14px;
 		font-weight: 400;
+		position: absolute;
+		display: block;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
 	  }
 	}
 
@@ -2913,12 +2999,13 @@
 
 	img{
 	  margin-bottom: 30px;
+	  width: 60px;
 	}
 
 	figcaption{
 	  color: #808080;
 	  font-family: $ANR;
-	  font-size: 24px;
+	  font-size: 18px;
 	  font-weight: 400;
 	}
   }
@@ -2933,14 +3020,14 @@
   min-width: 1000px;
   margin: 0 auto;
   position: relative;
-  padding: 30vh 0 10vh;
+  padding: 20vh 0 5vh;
   background-color: #fff;
 
   .heading{
 	color: #6e6e6e;
-	font-family: $ANB;
+	font-family: $ANR;
 	font-size: 18px;
-	font-weight: 700;
+	font-weight: 400;
 	margin-bottom: 30px;
   }
   .description{
@@ -2972,7 +3059,8 @@
 	  background-repeat: no-repeat;
 	  display: inline-block;
 	  z-index: 100;
-	  margin-bottom: 15px;
+	  margin-bottom: 10px;
+	  margin-right: 15px;
 	  width: 34px;
 	  height: 34px;
 	  border-radius: 50%;
@@ -3011,10 +3099,11 @@
 	  display: block;
 	  color: #fff;
 	  font-family: $ANR;
-	  font-size: 14px;
+	  font-size: 13px;
 	  font-weight: 400;
-	  line-height: 18px;
+	  line-height: 20px;
 	  margin-bottom: 0;
+	  letter-spacing: 1.1px;
 	}
   }
 }

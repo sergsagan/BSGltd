@@ -8,7 +8,6 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: "Arial", sans-serif;
     font-size: 16px;
     -webkit-font-smoothing: subpixel-antialiased !important;
     -webkit-backface-visibility: hidden;
@@ -108,10 +107,10 @@ a.disabled {
     padding-right:0!important;
 }
 .orange{
-    background-image: linear-gradient(to right, #ee9377 0%, #e8a66b 100%)!important;
+    background-image: linear-gradient(to right, #f38b4c 0%, #ffaf67 100%)!important;
 }
 .orange-color{
-    color:#ee9476!important;
+    color:#f38b4c!important;
 }
 .scroll-block{
     overflow-y: hidden;

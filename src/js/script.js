@@ -31,31 +31,6 @@ $(function() {
 		$('body,html').animate({scrollTop: top}, 1000);
 	});
 	
-	//charts
-	
-	google.charts.load('current', {
-		'packages': ['corechart']
-	});
-	google.charts.setOnLoadCallback(drawChart);
-	
-	function drawChart() {
-		
-		var data = google.visualization.arrayToDataTable([
-			['Task', 'тарифы'],
-			['Тариф 1', 3.3],
-			['Тариф 2', 5.8],
-			['Тариф 3', 7.1],
-			['Тариф 4', 8.5]
-		]);
-		
-		var options = {
-			title: ''
-		};
-		
-		var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-		
-		chart.draw(data, options);
-	}
 	
 	//menu
 	
@@ -75,13 +50,6 @@ $(function() {
 		$('body,html').animate({ scrollTop: 1 }, 1000);
 	});
 	
-	/*$(window).scroll(function(){
-		if ( $(document).scrollTop() > 0 ) {
-			$('#scrollUp').fadeIn('fast');
-		} else {
-			$('#scrollUp').fadeOut('fast');
-		}
-	});*/
 	
 	var $w = $(window);
 	$w.on('scroll', function(){
@@ -183,7 +151,7 @@ $(function() {
 	//slider Bootstrap
 	
 	$('#carousel').carousel({
-		interval: 5000
+		interval: 4000
 	});
 	
 	//slick-slider
@@ -209,7 +177,7 @@ $(function() {
 	//vertical slider
 	
 	$('.vertical-slider').slick({
-		dots: true,
+		dots: false,
 		arrows: true,
 		vertical: true,
 		slidesToShow: 1,
@@ -218,26 +186,62 @@ $(function() {
 		centerMode: true
 	});
 	
+	
+	//charts
+	
+	google.charts.load('current', {
+		'packages': ['corechart']
+	});
+	google.charts.setOnLoadCallback(drawChart);
+	
+	function drawChart() {
+		
+		var data = google.visualization.arrayToDataTable([
+			['Task', 'тарифы'],
+			['Тариф 1', 3.3],
+			['Тариф 2', 5.8],
+			['Тариф 3', 7.1],
+			['Тариф 4', 8.5]
+		]);
+		
+		var options = {
+			title: ''
+		};
+		
+		var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+		
+		chart.draw(data, options);
+	}
+	
 	//change selector
 	
-	$('.step span').click(function() {
-		$('.slider-nav .step').find(".top-line").removeClass("active orange");
-		$(this).parents('.step').find(".top-line").addClass("active orange").fadeIn(200);
+	
+	$(".main-2 .top-line").on("click", "", function(){
+		$(".top-line").removeClass("active");
+		$(this).addClass("active").fadeIn(200);
 	});
 	
+	$(".main-3 .top-line").on("click", "", function(){
+		$(".top-line").removeClass("active");
+		$(this).addClass("active").fadeIn(200);
+	});
 	
 	$(".task").on("click", "", function(){
 		$(".task").removeClass("select");
 		$(this).addClass("select").fadeIn(200);
 	});
 	
-	$(".rate").on("click", "", function(){
+	$(".rate-selection .rate").on("click", "", function(){
 		$(".rate").removeClass("select");
 		$(this).addClass("select").fadeIn(200);
 	});
 	
 
     $("#phone").mask("+38 (999) 999-99-99");
+	
+	$.scrollify({
+		section : ".scroll"
+	});
 	
     
     //Аякс отправка форм

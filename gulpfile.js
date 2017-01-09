@@ -201,6 +201,10 @@ gulp.task('js:vendor', function() {
 	          "wow": {
 		          "main": "./dist/wow.min.js"
 	          },
+	
+	          "Scrollify": {
+		          "main": "./jquery.scrollify.min.js"
+	          },
               
 	          "ionrangeslider": {
 		          "main": "./js/ion.rangeSlider.min.js"

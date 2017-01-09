@@ -7,19 +7,34 @@
   .slider .carousel-caption {
 	top: 11%;
   }
-  .header .navbar-default .navbar-nav > li > a {
-	font-size: 15px;
-	margin: 0 10px 0
+  .header .navbar-default .navbar-nav > li > a,
+  .header-inner .navbar-default .navbar-nav > li > a{
+	font-size: 13px;
+	margin: 0 15px 0
+  }
+  .header .navbar-default .navbar-form.navbar-right .registr,
+  .header-inner .navbar-default .navbar-form.navbar-right .registr {
+	font-size: 12px;
+	line-height: 24px;
+	width: 130px;
+	height: 28px;
+  }
+  .header .navbar-default .navbar-form.navbar-right .login,
+  .header-inner .navbar-default .navbar-form.navbar-right .login {
+	font-size: 12px;
+	line-height: 24px;
+	width: 60px;
+	height: 28px;
   }
   .header .navbar-brand {
 	margin-right: 0;
   }
   .slider .carousel-caption .title {
-	font-size: 22px;
+	font-size: 20px;
 	margin-bottom: 30px;
   }
   .slider .carousel-caption .description {
-	font-size: 15px;
+	font-size: 14px;
 	line-height: 20px;
   }
   .main-2{
@@ -136,21 +151,37 @@
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
-  .header .nav li a {
-	margin: 0 18px 0;
+  .header .nav li a,
+  .header-inner .nav li a{
+	margin: 0 10px 0;
   }
-  .header .navbar-default .navbar-nav > li > a {
-	font-size: 16px;
+  .header .navbar-default .navbar-nav > li > a,
+  .header-inner .navbar-default .navbar-nav > li > a{
+	font-size: 14px;
+  }
+  .header .navbar-default .navbar-form.navbar-right .registr,
+  .header-inner .navbar-default .navbar-form.navbar-right .registr{
+	font-size: 13px;
+	line-height: 25px;
+	width: 140px;
+	height: 28px;
+  }
+  .header .navbar-default .navbar-form.navbar-right .login,
+  .header-inner .navbar-default .navbar-form.navbar-right .login{
+	font-size: 13px;
+	line-height: 25px;
+	width: 70px;
+	height: 28px;
   }
   .slider .img-responsive, .slider .thumbnail > img, .slider .thumbnail a > img, .slider .carousel-inner > .item > img, .slider .carousel-inner > .item > a > img {
 	height: 800px;
 	position: relative;
   }
   .slider .carousel-caption .title {
-	font-size: 25px;
+	font-size: 22px;
   }
   .slider .carousel-caption .description {
-	font-size: 16px;
+	font-size: 15px;
 	padding: 0;
   }
   .main-2 .block-text .step-for-one .title {
@@ -250,12 +281,28 @@
   }
 }
 
-@media only screen and (min-width: 1370px) and (max-width: 1440px) {
-  .header .nav li a {
+@media only screen and (min-width: 1380px) and (max-width: 1440px) {
+  .header .nav li a,
+  .header-inner .nav li a{
 	margin: 0 25px 0;
   }
-  .header .navbar-default .navbar-nav > li > a {
+  .header .navbar-default .navbar-nav > li > a,
+  .header-inner .navbar-default .navbar-nav > li > a{
 	font-size: 17px;
+  }
+  .header .navbar-default .navbar-form.navbar-right .registr,
+  .header-inner .navbar-default .navbar-form.navbar-right .registr {
+	font-size: 17px;
+	line-height: 30px;
+	width: 160px;
+	height: 35px;
+  }
+  .header .navbar-default .navbar-form.navbar-right .login,
+  .header-inner .navbar-default .navbar-form.navbar-right .login{
+	font-size: 17px;
+	line-height: 30px;
+	width: 90px;
+	height: 35px;
   }
   .slider .img-responsive, .slider .thumbnail > img, .slider .thumbnail a > img, .slider .carousel-inner > .item > img, .slider .carousel-inner > .item > a > img {
 	height: 900px;
@@ -342,26 +389,70 @@
 }
 
 @media only screen and (min-width: 1441px) and (max-width: 1680px){
-  .header .nav li a {
-	margin: 0 35px 0;
+  .header .nav li a,
+  .header-inner .nav li a{
+	margin: 0 50px 0;
+  }
+  .header .navbar-default .navbar-nav > li > a,
+  .header-inner .navbar-default .navbar-nav > li > a{
+	font-size: 17px;
+  }
+  .header .navbar-default .navbar-form.navbar-right .registr,
+  .header-inner .navbar-default .navbar-form.navbar-right .registr{
+	font-size: 17px;
+	line-height: 30px;
+	width: 160px;
+	height: 35px;
+  }
+  .header .navbar-default .navbar-form.navbar-right .login,
+  .header-inner .navbar-default .navbar-form.navbar-right .login{
+	font-size: 17px;
+	line-height: 30px;
+	width: 90px;
+	height: 35px;
   }
   .slider .img-responsive, .slider .thumbnail > img, .slider .thumbnail a > img, .slider .carousel-inner > .item > img, .slider .carousel-inner > .item > a > img {
 	height: 1050px;
 	position: relative;
   }
   .slider .carousel-caption {
-	top: 12%;
+	top: 25%;
   }
   .slider .carousel-caption .title {
-	font-size: 34px;
+	font-size: 32px;
   }
   .slider .carousel-caption .description {
-	font-size: 19px;
-	padding: 0 40px;
+	font-size: 18px;
+	padding: 0 15vh;
+
+  }
+  .slider .page-indicator, .main-2 .page-indicator, .main-3 .page-indicator, .main-4 .page-indicator {
+	top: 40%;
+  }
+  .slider .page-indicator .page,
+  .main-2 .page-indicator .page,
+  .main-3 .page-indicator .page,
+  .main-4 .page-indicator .page{
+	font-size: 100px;
+  }
+  .slider .page-indicator .vertical,
+  .main-2 .page-indicator .vertical,
+  .main-3 .page-indicator .vertical,
+  .main-4 .page-indicator .vertical{
+	width: 5px;
+	height: 73px;
+	margin-right: 15px;
+  }
+  .slider .page-indicator sub,
+  .main-2 .page-indicator sub,
+  .main-3 .page-indicator sub,
+  .main-4 .page-indicator sub{
+	font-size: 28px;
+	bottom: -1.2em;
   }
   .main-2 .block-text .step-for-one .title {
-	font-size: 34px;
-	line-height: 38px;
+	font-size: 32px;
+	line-height: 36px;
 	margin-bottom: 30px;
   }
   .main-2 .block-text .step-for-one .description {
@@ -398,10 +489,10 @@
 	font-size: 16px;
   }
   .main-2 .block-text .step-for-three .task-mini figure figcaption {
-	max-width: 220px;
+	max-width: 179px;
   }
   .main-2 .block-text .step-for-three .task-mini .select {
-	width: 220px;
+	width: 179px;
   }
   .main-2 .block-text .step-for-three .task-mini figure {
 	margin: 5px auto 70px;
@@ -489,18 +580,18 @@
 	font-size: 16px;
   }
   .main-4 .feadback textarea {
-	height: 100px;
+	height: 50px;
 	font-size: 16px;
   }
   .main-4 .feadback input {
-	height: 45px;
+	height: 40px;
 	font-size: 16px;
   }
   .main-4 .information p {
-	font-size: 16px;
+	font-size: 15px;
   }
   .main-4 .information .heading {
-	font-size: 24px;
+	font-size: 22px;
   }
   .footer {
 	height: 150px;
@@ -546,10 +637,10 @@
   .two .rate-description .three-offer {
 	font-size: 15px;
   }
-  .profit, .invest {
+  .two .rate-description .btn-wrap .profit, .two .rate-description .btn-wrap .invest {
 	max-width: 188px;
 	height: 34px;
-	line-height: 26px;
+	line-height: 32px;
 	font-size: 15px;
   }
   .two .other-block .heading {
@@ -563,15 +654,109 @@
 	font-size: 17px;
 	line-height: 22px;
   }
+  .menu {
+	max-width: 385px;
+	top: 40%;
+	-webkit-transform: translate(0%, -40%);
+	transform: translate(0%, -40%);
+  }
+  .menu ul > li > a {
+	font-size: 85px;
+  }
+  .menu ul > li > a.active {
+	font-size: 85px;
+  }
+  .menu ul > li > a span {
+	font-size: 18px;
+	margin-top: -20px;
+  }
+  .menu ul li .vert {
+	width: 5px;
+	height: 75px;
+  }
+  .scroll-down-home{
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+  }
+  .register form input[type="checkbox"]:checked + label::before {
+	background-position: -21px 0;
+  }
+  .register form input[type="checkbox"] + label::before {
+	height: 22px;
+	width: 23px;
+  }
+  .ok-register figure img {
+	margin-bottom: 30px;
+	width: 80px;
+  }
+  .ok-register figure figcaption {
+	font-size: 21px;
+  }
 }
 
 @media only screen and (min-width: 1681px) and (max-width: 1920px) {
-  .header .nav li a {
-	margin: 0 55px 0;
+  .header .nav li a,
+  .header-inner .nav li a{
+	margin: 0 60px 0;
+  }
+  .header .navbar-default .navbar-nav > li > a,
+  .header-inner .navbar-default .navbar-nav > li > a{
+	font-size: 18px;
+  }
+  .header .navbar-default .navbar-form.navbar-right .registr,
+  .header-inner .navbar-default .navbar-form.navbar-right .registr{
+	font-size: 18px;
+	line-height: 30px;
+	width: 170px;
+	height: 35px;
+	border-radius: 10px;
+  }
+  .header .navbar-default .navbar-form.navbar-right .login,
+  .header-inner .navbar-default .navbar-form.navbar-right .login{
+	font-size: 18px;
+	line-height: 30px;
+	width: 100px;
+	height: 35px;
   }
   .slider .img-responsive, .slider .thumbnail > img, .slider .thumbnail a > img, .slider .carousel-inner > .item > img, .slider .carousel-inner > .item > a > img {
 	height: 1080px;
 	position: relative;
+  }
+  .slider .carousel-caption {
+	margin: auto;
+	position: absolute;
+	top: 25%;
+	left: 45%;
+	-webkit-transform: translate(-40%, 15%);
+	transform: translate(-40%, 15%);
+	padding-bottom: 0;
+	right: auto;
+  }
+  .slider .carousel-caption .title {
+	font-size: 36px;
+	margin-bottom: 40px;
+  }
+  .slider .carousel-caption .description {
+	font-size: 20px;
+	line-height: 24px;
+	padding: 0 15vh;
+  }
+  .slider .page-indicator, .main-2 .page-indicator, .main-3 .page-indicator, .main-4 .page-indicator {
+	top: 40%;
+	left: 3%;
+  }
+  .slider .page-indicator .page {
+	font-size: 125px;
+  }
+  .slider .page-indicator .vertical {
+	width: 5px;
+	height: 88px;
+	margin-right: 20px;
+  }
+  .slider .page-indicator sub {
+	font-size: 30px;
+	bottom: -1.25em;
   }
   .main-2 .block-text .step-for-one .title {
 	font-size: 36px;
@@ -581,11 +766,23 @@
   .main-2 .block-text .step-for-one .description {
 	font-size: 20px;
   }
+  .main-2  .page-indicator .page {
+	font-size: 125px;
+  }
+  .main-2 .page-indicator .vertical {
+	width: 5px;
+	height: 88px;
+	margin-right: 20px;
+  }
+  .main-2  .page-indicator sub {
+	font-size: 30px;
+	bottom: -1.25em;
+  }
   .main-2 .block-step .slider-nav .step {
 	font-size: 20px;
   }
   .main-2 .scroll-down {
-	bottom: 3%;
+	bottom: 10%;
   }
   .main-2 .scroll-up {
 	top: 11%;
@@ -605,6 +802,9 @@
   .main-2 .block-text .step-for-two figure figcaption span {
 	font-size: 18px;
   }
+  .main-2 .block-text .step-for-three .task-mini {
+	margin-top: 70px;
+  }
   .main-2 .block-text .step-for-three .task-mini figure figcaption .heading {
 	font-size: 18px;
   }
@@ -612,10 +812,10 @@
 	font-size: 16px;
   }
   .main-2 .block-text .step-for-three .task-mini figure figcaption {
-	max-width: 220px;
+	max-width: 179px;
   }
   .main-2 .block-text .step-for-three .task-mini .select {
-	width: 220px;
+	width: 179px;
   }
   .main-2 .block-text .step-for-three .task-mini figure {
 	margin: 5px auto 70px;
@@ -625,7 +825,7 @@
 	margin-bottom: 80px;
   }
   .main-3 .scroll-down {
-	bottom: 3%;
+	bottom: 10%;
   }
   .main-3 .scroll-up {
 	top: 12%;
@@ -638,6 +838,24 @@
 	margin-bottom: 20px;
 	line-height: 22px;
   }
+  .main-3  .page-indicator .page {
+	font-size: 125px;
+  }
+  .main-3 .page-indicator .vertical {
+	width: 5px;
+	height: 88px;
+	margin-right: 20px;
+  }
+  .main-3  .page-indicator sub {
+	font-size: 30px;
+	bottom: -1.25em;
+  }
+  .main-3 .block-text .step-for-one .slide-information {
+	margin-top: 125px;
+  }
+  .main-3 .block-text .step-for-one #piechart {
+	padding-top: 150px;
+  }
   .main-3 .block-text .step-for-one .list li {
 	font-size: 20px;
 	line-height: 25px;
@@ -645,6 +863,9 @@
   }
   .main-3 .block-step .slider-nav .step {
 	font-size: 20px;
+  }
+  .main-3 .block-text .step-for-two .rate-selection {
+	margin-top: 105px;
   }
   .main-3 .block-text .step-for-two .rate-selection .rate {
 	max-width: 279px;
@@ -665,6 +886,9 @@
   .main-3 .block-text .step-for-two .rate-selection .rate ul li {
 	font-size: 16px;
   }
+  .main-3 .block-text .step-for-three .user-information {
+	padding-top: 135px;
+  }
   .main-3 .block-text .step-for-three .user-information .description {
 	font-size: 18px;
   }
@@ -672,7 +896,7 @@
 	font-size: 18px;
   }
   .main-3 .block-text .step-for-three .user-data {
-	padding-top: 70px;
+	padding-top: 135px;
   }
   .main-3 .block-text .step-for-three .user-data .block-1 span {
 	font-size: 40px;
@@ -700,6 +924,18 @@
 	font-size: 20px;
 	margin-bottom: 70px;
   }
+  .main-4  .page-indicator .page {
+	font-size: 125px;
+  }
+  .main-4 .page-indicator .vertical {
+	width: 5px;
+	height: 88px;
+	margin-right: 20px;
+  }
+  .main-4  .page-indicator sub {
+	font-size: 30px;
+	bottom: -1.25em;
+  }
   .feadback label {
 	font-size: 16px;
   }
@@ -710,6 +946,10 @@
   .feadback input {
 	height: 45px;
 	font-size: 16px;
+  }
+  .main-4 .information {
+	max-width: 280px;
+	padding: 16px 25px 10px;
   }
   .main-4 .information p {
 	font-size: 16px;
@@ -761,10 +1001,10 @@
   .two .rate-description .three-offer {
 	font-size: 16px;
   }
-  .profit, .invest {
-	max-width: 188px;
+  .two .rate-description .btn-wrap .profit, .two .rate-description .btn-wrap .invest {
+	max-width: 159px;
 	height: 34px;
-	line-height: 28px;
+	line-height: 32px;
 	font-size: 16px;
   }
   .two .other-block .heading {
@@ -778,4 +1018,109 @@
 	font-size: 18px;
 	line-height: 24px;
   }
+  .menu {
+	max-width: 400px;
+	top: 40%;
+	left: 2%;
+	-webkit-transform: translate(0%, -40%);
+	transform: translate(0%, -40%);
+  }
+  .menu ul > li > a {
+	font-size: 100px;
+  }
+  .menu ul > li > a.active {
+	font-size: 100px;
+  }
+  .menu ul > li > a span {
+	font-size: 20px;
+	margin-top: -25px;
+  }
+  .menu ul li .vert {
+	width: 5px;
+	height: 88px;
+  }
+  .scroll-down-home{
+	width: 60px;
+	height: 60px;
+	border-radius: 60px;
+  }
+  .news .nav-tabs > li.active > a, .news .nav-tabs > li.active > a:hover, .news .nav-tabs > li.active > a:focus {
+	font-size: 18px;
+  }
+  .news .nav-tabs > li.active > a span, .news .nav-tabs > li.active > a:hover span, .news .nav-tabs > li.active > a:focus span {
+	font-size: 12px;
+  }
+  .news .nav-tabs > li > a, .news .nav-tabs > li > a:hover, .news .nav-tabs > li > a:focus {
+	font-size: 18px;
+  }
+  .news .nav-tabs > li > a span, .news .nav-tabs > li > a:hover span, .news .nav-tabs > li > a:focus span {
+	font-size: 12px;
+  }
+  .agreement .nav-tabs > li > a, .agreement .nav-tabs > li > a:hover, .agreement .nav-tabs > li > a:focus {
+	font-size: 18px;
+  }
+  .agreement .nav-tabs > li.active > a, .agreement .nav-tabs > li.active > a:hover, .agreement .nav-tabs > li.active > a:focus {
+	font-size: 18px;
+  }
+  .agreement dl dd {
+	font-size: 18px;
+	line-height: 22px;
+  }
+  .agreement .vert-line {
+	top: 12%;
+  }
+  .register form input[type="checkbox"]:checked + label::before {
+	background-position: -21px 0;
+  }
+  .register form input[type="checkbox"] + label::before {
+	height: 22px;
+	width: 23px;
+  }
+  .registration .next{
+	max-width: 205px;
+	height: 34px;
+	font-size: 16px;
+	line-height: 32px;
+  }
+  .registration-2 .prev {
+	max-width: 200px;
+	width: 100%;
+	height: 34px;
+	font-size: 16px;
+	line-height: 30px;
+  }
+  .registration-2 .next {
+	max-width: 200px;
+	height: 34px;
+	font-size: 16px;
+	line-height: 32px;
+  }
+  .ok-register figure img {
+	margin-bottom: 30px;
+	width: 101px;
+  }
+  .ok-register figure figcaption {
+	font-size: 24px;
+  }
+  .sign input {
+	max-width: 420px;
+	height: 34px;
+  }
+  .sign label {
+	font-size: 16px;
+  }
+  .sign .signin {
+	max-width: 200px;
+	width: 100%;
+	height: 34px;
+	font-size: 16px;
+	line-height: 32px;
+  }
+  .sign-in {
+	padding: 30vh 0 5vh;
+  }
+  .first .vertical-line {
+	top: 30%;
+  }
+
 }

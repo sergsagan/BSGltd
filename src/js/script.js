@@ -62,7 +62,7 @@ $(function() {
 		event.preventDefault();
 		$('.overlay').fadeIn(400, function(){
 			$('.menu').css('display', 'block');
-			$('.menu').animate({opacity: 1, top: '50%', left:'0'}, 300);
+			$('.menu').animate({opacity: 1, top: '45%', left:'0'}, 300);
 		});
 	});
 	
@@ -79,7 +79,7 @@ $(function() {
 		event.preventDefault();
 		$('.overlay').fadeIn(400, function(){
 			$('.menu').css('display', 'block');
-			$('.menu').animate({opacity: 1, top: '50%', left:'0'}, 300);
+			$('.menu').animate({opacity: 1, top: '45%', left:'0'}, 300);
 		});
 	});
 	
@@ -87,7 +87,7 @@ $(function() {
 		event.preventDefault();
 		$('.overlay').fadeIn(400, function(){
 			$('.menu').css('display', 'block');
-			$('.menu').animate({opacity: 1, top: '50%', left:'0'}, 300);
+			$('.menu').animate({opacity: 1, top: '45%', left:'0'}, 300);
 		});
 	});
 	
@@ -95,7 +95,7 @@ $(function() {
 		event.preventDefault();
 		$('.overlay').fadeIn(400, function(){
 			$('.menu').css('display', 'block');
-			$('.menu').animate({opacity: 1, top: '50%', left:'0'}, 300);
+			$('.menu').animate({opacity: 1, top: '45%', left:'0'}, 300);
 		});
 	});
 	
